@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+header {
+  background: linear-gradient(135deg, blue, cyan);
+  color: white;
+  font-weight: bold;
+  font-size: 128px;
+  padding: 32px 64px;
+  border-bottom-left-radius: 64px;
+  border-bottom-right-radius: 64px;
+}
+
+.header-logo {
+  float: left;
+  margin-right: 64px;
+}
+
+.header-link {
+  vertical-align: middle;
+  color: white;
+  text-decoration: none;
+  font-size: 64px;
+  margin-left: 64px;
+  margin-right: 64px;
+}
