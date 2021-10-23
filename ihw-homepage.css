@@ -40,3 +40,8 @@ footer {
   font-size: 64px;
   margin: auto 32px;
 }
+
+.footer-logo {
+  text-decoration: none;
+  color: white;
+}
