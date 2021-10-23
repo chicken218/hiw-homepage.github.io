@@ -17,6 +17,7 @@ main {
   width: 1024px;
   font-size: 32px;
   padding: 16px 64px;
+  text-align: center;
 }
 
 footer {
@@ -39,6 +40,14 @@ footer {
   text-decoration: none;
   font-size: 64px;
   margin: auto 32px;
+}
+
+.main-link {
+  font-weight: bold;
+  background-color: darkgreen;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
 }
 
 .footer-logo {
