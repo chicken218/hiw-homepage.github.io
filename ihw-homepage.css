@@ -1,21 +1,36 @@
 body {
   margin: 0;
   user-select: none;
+  font-family: serif;
 }
 
 header {
-  background: linear-gradient(135deg, blue, cyan);
+  background-color: darkgreen;
   color: white;
   font-weight: bold;
   font-size: 128px;
-  padding: 32px 64px;
-  border-bottom-left-radius: 64px;
-  border-bottom-right-radius: 64px;
+  padding: 16px 64px;
+}
+
+main {
+  margin: 64px auto;
+  width: 1024px;
+  font-size: 32px;
+  padding: 16px 64px;
+}
+
+footer {
+  background-color: darkgreen;
+  font-size: 128px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding: 16px 64px;
 }
 
 .header-logo {
   float: left;
-  margin-right: 64px;
+  margin-right: 32px;
 }
 
 .header-link {
@@ -23,6 +38,5 @@ header {
   color: white;
   text-decoration: none;
   font-size: 64px;
-  margin-left: 64px;
-  margin-right: 64px;
+  margin: auto 32px;
 }
