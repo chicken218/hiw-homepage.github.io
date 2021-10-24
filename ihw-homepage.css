@@ -13,7 +13,7 @@ header {
 }
 
 main {
-  margin: 64px auto;
+  margin: auto auto 64px auto;
   width: 1024px;
   font-size: 32px;
   padding: 16px 64px;
