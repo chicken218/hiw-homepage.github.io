@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background-color: olive;
+  background-color: teal;
   color: white;
   font-weight: bold;
   font-size: 128px;
@@ -21,7 +21,7 @@ main {
 }
 
 footer {
-  background-color: olive;
+  background-color: teal;
   font-size: 128px;
   text-align: center;
   font-weight: bold;
@@ -44,7 +44,7 @@ footer {
 
 .main-link {
   font-weight: bold;
-  background-color: darkgreen;
+  background-color: teal;
   color: white;
   padding: 16px;
   text-decoration: none;
