@@ -6,7 +6,7 @@ body {
 
 header {
   background-color: navy;
-  color: white;
+  color: olive;
   font-weight: bold;
   font-size: 128px;
   padding: 16px 64px;
@@ -25,7 +25,7 @@ footer {
   font-size: 128px;
   text-align: center;
   font-weight: bold;
-  color: white;
+  color: olive;
   padding: 16px 64px;
 }
 
@@ -36,7 +36,7 @@ footer {
 
 .header-link {
   vertical-align: middle;
-  color: white;
+  color: olive;
   text-decoration: none;
   font-size: 64px;
   margin: auto 32px;
@@ -45,12 +45,12 @@ footer {
 .main-link {
   font-weight: bold;
   background-color: navy;
-  color: white;
+  color: olive;
   padding: 16px;
   text-decoration: none;
 }
 
 .footer-logo {
   text-decoration: none;
-  color: white;
+  color: olive;
 }
