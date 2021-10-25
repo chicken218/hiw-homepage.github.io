@@ -32,6 +32,10 @@ span {
   font-weight: normal;
 }
 
+.header-list {
+  text-align: center;
+}
+
 .header-logo {
   float: left;
   margin-right: 32px;
