@@ -32,16 +32,11 @@ span {
   font-weight: normal;
 }
 
-.header-list {
+.footer-list {
   text-align: center;
 }
 
-.header-logo {
-  float: left;
-  margin-right: 32px;
-}
-
-.header-link {
+.footer-link {
   vertical-align: middle;
   color: white;
   text-decoration: none;
@@ -80,7 +75,7 @@ span {
   text-decoration: none;
 }
 
-.footer-logo {
+.header-logo {
   text-decoration: none;
   color: white;
 }
