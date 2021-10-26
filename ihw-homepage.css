@@ -14,7 +14,8 @@ header {
 
 main {
   margin: auto auto auto auto;
-  width: 1024px;
+  max-width: 1024px;
+  min-width: 256px;
   font-size: 32px;
   padding: 16px 64px;
 }
