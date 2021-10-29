@@ -29,6 +29,10 @@ footer {
   padding: 16px 64px;
 }
 
+hr {
+  color: teal;
+}
+
 .footer-list {
   text-align: center;
 }
@@ -57,7 +61,7 @@ footer {
 }
 
 .span-underline {
-  text-decoration: underline;
+  text-decoration: underline teal;
 }
 
 .div-link {
