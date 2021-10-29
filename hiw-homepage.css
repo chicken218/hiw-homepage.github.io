@@ -77,6 +77,10 @@ hr {
   margin: 32px;
 }
 
+.li-margin {
+  margin: 64px auto;
+}
+
 .header-logo {
   text-decoration: none;
   color: white;
