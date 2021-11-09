@@ -1,0 +1,6 @@
+# authenticate(Basic)
+AuthUserFile /admin
+AuthGroupFile /dev/null
+AuthName "パスワードを入力してください｡"
+AuthType Basic
+require valid-user
