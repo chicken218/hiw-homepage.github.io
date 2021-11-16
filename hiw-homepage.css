@@ -30,11 +30,12 @@ footer {
 }
 
 hr {
-  border: solid teal;
+  color: teal;
 }
 
 iframe {
   border: solid teal;
+  margin-bottom: 64px;
 }
 
 .footer-list {
