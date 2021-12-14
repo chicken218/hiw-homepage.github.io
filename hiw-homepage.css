@@ -83,3 +83,17 @@ iframe {
   width: 75%;
   margin: 48px 12.5% 64px 12.5%;
 }
+
+.home div {
+  position: relative;
+}
+
+.home a {
+  cursor: default;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 16px;
+  width: 16px;
+  opacity: 0;
+}
