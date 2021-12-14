@@ -38,3 +38,17 @@ only screen and (                min-resolution: 2dppx) {
   font-size: 14px;
   margin: 0 10px;
 }
+
+.home div {
+  position: relative;
+}
+
+.home a {
+  cursor: default;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 16px;
+  width: 16px;
+  opacity: 0;
+}
