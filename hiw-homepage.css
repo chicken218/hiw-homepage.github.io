@@ -54,7 +54,7 @@ iframe {
 }
 
 .scroll-div {
-  clip-path: content-box;
+  clip-path: inset(0);
 }
 
 .scroll-p {
