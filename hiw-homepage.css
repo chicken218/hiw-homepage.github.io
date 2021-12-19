@@ -57,7 +57,7 @@ iframe {
   clip-path: content-box;
 }
 
-.scroll-li {
+.scroll-p {
   animation-duration: 18s;
   animation-name: slidein;
   animation-iteration-count: infinite;
