@@ -6,7 +6,6 @@ body {
   margin: 0;
   width:100%;
   overflow-x: hidden !important;
-  width: 100%;
 }
 
 header {
@@ -46,6 +45,10 @@ iframe {
   margin: 64px 0;
 }
 
+hr {
+  margin: 0;
+}
+
 .title {
   font-family: 'Roboto Slab', serif;
   font-size: 64px;
@@ -56,28 +59,27 @@ iframe {
   padding: 16px;
 }
 
-.scroll-div {
-  clip-path: inset(0);
-  text-align: center;
+.scroll {
+  width      : 100%;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align : center;
+  overflow   : hidden;
 }
 
-.scroll-p {
-  animation-duration: 18s;
-  animation-name: scroll;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+.scroll span{
+  margin: 64px 0;
+  display     : inline-block;
+  animation   : scrollAnime 20s linear infinite;
 }
 
-@keyframes scroll {
-  from {
-    transform: translateX(100%);
+@keyframes scrollAnime{
+    0% {
+      transform: translateX(100%)
+    }
+  100% {
+    transform: translateX(-100%)
   }
-
-  to {
-    transform: translateX(-100%);
-  }
 }
-
 
 .title span {
   font-size: 32px;
