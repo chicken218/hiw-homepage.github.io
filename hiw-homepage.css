@@ -43,7 +43,11 @@ li {
 
 iframe {
   margin: 64px 0;
+  width: 100%;
+  height: calc( 1024px - calc(100vh - 896px) );
+  border: none;
 }
+
 
 hr {
   margin: 0;
