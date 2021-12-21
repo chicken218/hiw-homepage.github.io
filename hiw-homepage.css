@@ -70,6 +70,7 @@ hr {
   margin: 64px 0;
   display     : inline-block;
   animation   : scrollAnime 20s linear infinite;
+  vertical-align: bottom;
 }
 
 @keyframes scrollAnime{
