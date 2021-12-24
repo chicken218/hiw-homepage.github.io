@@ -17,8 +17,7 @@ header {
 
 main {
   font-size: 32px;
-  margin: auto;
-  width: 75%;
+  margin: auto 128px;
 }
 
 h1 {
