@@ -29,8 +29,8 @@ p {
   margin: 64px 0;
 }
 
-ol {
-  margin: 64px;
+.terms {
+  list-style-type: upper-roman;
 }
 
 li {
@@ -39,11 +39,35 @@ li {
   margin: 64px 0;
 }
 
+hr {
+  width: 100% inherit;
+}
+
+.terms {
+  display: none;
+}
+
+.procedure:hover .terms {
+  display: block;
+}
+
 .procedure {
   border-radius: 4px;
   box-shadow: 0 0 4px;
-  padding: 16px;
+  padding: 64px 64px;
   margin: 64px auto;
+}
+
+.first {
+  margin-top: 0px;
+}
+
+.last {
+  margin-bottom: 0px;
+}
+
+.procedure:hover {
+  box-shadow: 0 0 8px;
 }
 
 .email {
