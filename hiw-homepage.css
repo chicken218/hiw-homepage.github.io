@@ -86,7 +86,7 @@ hr {
 .scroll span{
   margin: 64px 0;
   display     : inline-block;
-  animation   : scrollAnime 20s linear infinite;
+  animation   : scrollAnime 18s linear infinite;
   vertical-align: bottom;
 }
 
