@@ -100,26 +100,30 @@ hr {
   padding: 16px;
 }
 
-.scroll {
-  width      : 100%;
-  font-family: 'Noto Sans JP', sans-serif;
+.scroll-div {
+  margin: 64px 0;
+  padding: 0 64px;
+  border-radius: 4px;
+  box-shadow: 0 0 4px inset;
   text-align : center;
   overflow   : hidden;
+  width: calc(100% - 128px);
 }
 
-.scroll span{
+.scroll-span {
   margin: 64px 0;
   display     : inline-block;
   animation   : scrollAnime 18s linear infinite;
   vertical-align: bottom;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 @keyframes scrollAnime{
     0% {
-      transform: translateX(100%)
+      transform: translateX(100vw)
     }
   100% {
-    transform: translateX(-100%)
+    transform: translateX(-100vw)
   }
 }
 
