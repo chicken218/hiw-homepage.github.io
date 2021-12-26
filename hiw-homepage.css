@@ -56,13 +56,10 @@ hr {
   box-shadow: 0 0 4px;
   padding: 64px 64px;
   margin: 64px auto;
-  transition: 0.3s;
-  height: 15ex;
 }
 
 .procedure:hover, .procedure:active {
   box-shadow: 0 0 8px;
-  height: 108.5ex;
 }
 
 .first {
