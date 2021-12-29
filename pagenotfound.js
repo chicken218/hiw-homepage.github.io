@@ -1,3 +1,3 @@
 function OnLinkClick() {
-    window.location.href = "https://hiw-homepage.github.io/home";
+    document.getElementById("contents").style.display = "none";
 }
