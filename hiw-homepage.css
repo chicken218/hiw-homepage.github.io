@@ -15,13 +15,13 @@ header {
 }
 
 main {
-  font-size: 32px;
   margin: auto 128px;
 }
 
-p {
+p, button, form {
   font-family: 'Noto Sans JP', sans-serif;
   margin: 64px 0;
+  font-size: 32px;
 }
 
 li {
@@ -34,13 +34,49 @@ hr {
   width: 100% inherit;
 }
 
+input {
+  font-size: 32px;
+  padding: 16px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 4px inset;
+  width: 100%;
+  margin: 0 auto 64px auto;
+
+  display: block;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+input:focus {
+  box-shadow: 0 0 8px inset;
+}
+
+button {
+  font-size: 32px;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  background-color: black;
+  padding: 16px 128px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 0;
+}
+
+.button {
+  text-align: center;
+}
+
+#hidden {
+  display: none;
+}
+
 .pagenotfound {
   width: 100vw;
   height: 100vh;
   vertical-align: bottom;
 }
 
-#form {
+#join {
   display: none;
 }
 
@@ -95,8 +131,8 @@ hr {
   padding: 16px;
 }
 
-.title span {
-  font-size: 32px;
+.title span{
+  font-size: 0.5em;
 }
 
 .scroll-div {
@@ -151,6 +187,8 @@ hr {
   border: 4px solid black;
   padding: 16px;
   margin: 0 64px;
+  cursor: pointer;
+  padding: 16px;
 }
 
 .top {
