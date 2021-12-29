@@ -1,3 +1,3 @@
 function PageNotFound() {
-    location.href = "https://hiw-homepage.github.io/home";
+    location.href = "hiw-homepage.html";
 }
