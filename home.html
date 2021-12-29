@@ -14,7 +14,7 @@
         <a class="title" href="https://hiw-homepage.github.io/home">H<span>iria</span>I<span>nkya</span>W<span>otaku</span></a>
       </header>
       <main>
-        <div id="join">
+        <div id="form">
         <p>HIWは2021年10月に設立された団体で、多くの会員を誇ります。また、呼称は3項目の頭文字に由来しています｡</p>
         <p>ご入会の際は以下の手順に従ってください｡</p>
         <div class="procedure">
@@ -40,12 +40,20 @@
               <hr>
             </div>
           <ol start="2"  class="last">
-            <li>Googleに<a href="https://www.google.com/accounts?hl=ja-jp" target="_blank">ログイン</a>して<a href="javascript:void(0);" onclick="OnLinkClick();">フォーム</a>にご回答下さい</li>
+            <li>Googleに<a href="https://www.google.com/accounts?hl=ja-jp" target="_blank">ログイン</a>して<a href="javascript:void(0);" onclick="Join();">フォーム</a>にご回答下さい</li>
             <li class="last">連絡をお待ちください</li>
           </ol>
         </div>
         </div>
-        <iframe class="form" id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSfBL3lz6HeC8NHKehtAhdUuZnZb0umc2nM5_MjlzZzXtuFAFg/viewform?embedded=true">読み込んでいます…</iframe>
+        <form id="join" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfBL3lz6HeC8NHKehtAhdUuZnZb0umc2nM5_MjlzZzXtuFAFg/formResponse" method="post" target="hidden" onsubmit="submitted = true;">
+          <p>全ての項目が必須です。一部でも欠如がある場合、内容は無効となります。入会以外は<a href="https://docs.google.com/forms/d/e/1FAIpQLSfBL3lz6HeC8NHKehtAhdUuZnZb0umc2nM5_MjlzZzXtuFAFg/viewform?usp=sf_link">メールフォーム</a>までお願いします｡</p>
+            <input type="text" name="entry.1736430845" placeholder="メールアドレス" required="required">
+            <input type="text" name="entry.1387815750" placeholder="お名前" required="required">
+          <div class="button">
+            <button type="submit" name="button" value="送信" required="required" href="javascript:void(0);" onclick="Form();">send</button>
+          </div>
+        </form>
+        <iframe name="hidden" id="hidden"></iframe>
       </main>
   </body>
 </html>
