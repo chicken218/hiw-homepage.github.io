@@ -59,6 +59,7 @@ button {
   border: none;
   border-radius: 4px;
   margin-top: 0;
+  cursor: pointer;
 }
 
 .button {
@@ -117,6 +118,10 @@ button {
 
 hr {
   margin: 0;
+}
+
+#home {
+  display: none;
 }
 
 .title {
