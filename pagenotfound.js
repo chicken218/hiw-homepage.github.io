@@ -1,3 +1,3 @@
-function OnLinkClick() {
-    document.getElementById("contents").style.display = "none";
+function PageNotFound() {
+    location.href = "https://hiw-homepage.github.io/home";
 }
