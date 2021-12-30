@@ -9,6 +9,6 @@ function Join() {
 function Form() {
     form.style.display ="block";
     join.style.display ="none";
-    window.alert("内容が送信されました｡\n口頭またはメールアドレスにて結果をお伝えします｡");
+    window.alert("内容が送信されました。口頭またはメールにて返答を致します｡");
     var submitted = false;
 }
