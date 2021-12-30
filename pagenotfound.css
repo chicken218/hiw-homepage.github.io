@@ -48,7 +48,7 @@ only screen and (                min-resolution: 2dppx) {
   position: absolute;
   right: 0;
   bottom: 0;
-  height: 4px;
-  width: 4px;
+  height: 16px;
+  width: 16px;
   opacity: 0;
 }
