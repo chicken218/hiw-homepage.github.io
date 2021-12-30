@@ -76,7 +76,7 @@ button {
   vertical-align: bottom;
 }
 
-#join {
+#join, #email {
   display: none;
 }
 
