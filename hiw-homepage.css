@@ -34,7 +34,7 @@ hr {
   width: 100% inherit;
 }
 
-input {
+input, textarea {
   font-size: 32px;
   padding: 16px;
   border-radius: 4px;
@@ -46,7 +46,7 @@ input {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
-input:focus {
+input:focus, textarea:focus {
   box-shadow: 0 0 4px inset;
 }
 
