@@ -17,6 +17,5 @@ function Form() {
     form.style.display ="block";
     join.style.display ="none";
     email.style.display ="none";
-    window.alert("内容が送信されました。口頭またはメールにて返答を致します｡");
     var submitted = false;
 }
