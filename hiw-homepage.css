@@ -19,6 +19,13 @@ main {
   max-width: 1280px;
 }
 
+h1 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 100;
+  font-size: 64px;
+  text-align: center;
+}
+
 p, button, form {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 100;
