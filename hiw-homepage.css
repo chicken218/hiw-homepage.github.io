@@ -99,6 +99,10 @@ button, .button-a {
   display: none;
 }
 
+#terms {
+  display: none;
+}
+
 .terms {
   list-style-type: upper-roman;
 }
@@ -185,5 +189,6 @@ hr {
 
 .button-div {
   text-align: center;
+  margin-top: 64px;
   margin: 64px 0;
 }
