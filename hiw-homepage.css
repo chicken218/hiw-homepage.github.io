@@ -175,24 +175,7 @@ hr {
   }
 }
 
-.url-center {
-  color: white;
-  text-decoration: none;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
-  font-size: 32px;
-  padding: 16px;
-  border: 4px solid white;
-  margin: auto 64px;
-}
-
 .button-div {
   text-align: center;
   margin: 64px 0;
-}
-
-
-.top {
-  width: 75%;
-  margin: 48px 12.5% 64px 12.5%;
 }
