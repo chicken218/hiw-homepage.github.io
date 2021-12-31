@@ -23,13 +23,13 @@
             <li class="first">規約とご覧になり、同意してください｡</li>
             <li>入会フォームにご回答ください｡</li>
             <div class="button-div">
-              <a class="button-a" href="javascript:void(0);" onclick="Join();">Terms</a>
+              <a class="button-a" href="javascript:void(0);" onclick="Terms();">Terms</a>
             </div>
             <li class="last">連絡をお待ちください</li>
           </ol>
         </div>
         </div>
-        <form id="join" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfBL3lz6HeC8NHKehtAhdUuZnZb0umc2nM5_MjlzZzXtuFAFg/formResponse" method="post" target="hidden" onsubmit="Form(); submitted = true;">
+        <div id="terms">
           <p>以下の規約に同意した場合は入会フォームにご回答ください｡</p>
           <div class="terms">
             <ol class="first">
@@ -44,9 +44,14 @@
               <li>｢昇格の儀｣は幹部8人以上が特定の人物の昇格に賛同した場合のみ開催する儀である</li>
               <li>HIWの議論の場として、｢サミット｣が設けられることがある</li>
               <li>それによる決定事項は非参加の場合、棄却できない</li>
-              <li class="last">例外として目的を損なわない提案は容認の場合もある</li>
+              <li>例外として目的を損なわない提案は容認の場合もある</li>
             </ol>
+            <div class="button-div last">
+              <a class="button-a" href="javascript:void(0);" onclick="Join();">Join</a>
+            </div>
           </div>
+        </div>
+        <form id="join" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfBL3lz6HeC8NHKehtAhdUuZnZb0umc2nM5_MjlzZzXtuFAFg/formResponse" method="post" target="hidden" onsubmit="Form(); submitted = true;">
           <h1>入会フォーム</h1>
           <p>全ての項目が必須です。一部でも欠如がある場合、内容は無効となります。入会以外は<a href="javascript:void(0);" onclick="Email();">メールフォーム</a>までお願いします｡</p>
           <div class="text">
