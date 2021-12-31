@@ -103,7 +103,7 @@ button, .button-a {
   max-width: 1024px;
 }
 
-.procedure:hover, .procedure:active {
+.procedure:hover, .terms:hover {
   box-shadow: 0 0 8px;
 }
 
