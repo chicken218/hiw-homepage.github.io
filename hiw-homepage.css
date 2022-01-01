@@ -15,8 +15,7 @@ header {
 }
 
 main {
-  margin: auto;
-  max-width: 1280px;
+  margin: auto 128px;
 }
 
 h1 {
@@ -45,8 +44,7 @@ hr {
 }
 
 .text {
-  max-width: 1024px;
-  margin: 0 auto 0 auto;
+  margin: auto 128px;
 }
 
 input, textarea {
@@ -115,8 +113,7 @@ button, .button-a {
   border-radius: 4px;
   box-shadow: 0 0 4px;
   padding: 64px 64px;
-  margin: 64px auto;
-  max-width: 896px;
+  margin: 64px 128px;
 }
 
 .first {
@@ -124,6 +121,12 @@ button, .button-a {
 }
 
 .last {
+  margin-bottom: 0px;
+}
+
+.button-div-last {
+  text-align: center;
+  margin-top: 64px;
   margin-bottom: 0px;
 }
 
