@@ -7,6 +7,7 @@ function Home() {
     form.style.display = "block";
     join.style.display = "none";
     email.style.display = "none";
+    terms.style.display = "none"
 }
 
 function Terms() {
