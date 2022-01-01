@@ -1,4 +1,4 @@
-@media (orientation: landscape) {
+@media screen and (min-device-width: 1024px) {
  
 .text {
   margin: auto 128px;
@@ -10,7 +10,7 @@
 
 }
 
-@media (orientation: portrait){
+@media screen and (max-device-width: 1024px) {
  
   .text {
     margin: auto 0;
