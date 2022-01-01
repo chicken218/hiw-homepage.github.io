@@ -1,3 +1,27 @@
+@media (orientation: landscape) {
+ 
+.text {
+  margin: auto 128px;
+}
+ 
+.procedure, .terms {
+  margin: 64px 128px;
+}
+
+}
+
+@media (orientation: portrait){
+ 
+  .text {
+    margin: auto 0;
+  }
+   
+  .procedure, .terms {
+    margin: 64px 0;
+  }
+  
+}
+
 body {
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -41,10 +65,6 @@ li {
 
 hr {
   width: 100% inherit;
-}
-
-.text {
-  margin: auto 128px;
 }
 
 input, textarea {
@@ -113,7 +133,6 @@ button, .button-a {
   border-radius: 4px;
   box-shadow: 0 0 4px;
   padding: 64px 64px;
-  margin: 64px 128px;
 }
 
 .first {
