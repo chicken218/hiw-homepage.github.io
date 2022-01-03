@@ -70,6 +70,10 @@ hr {
 input, textarea {
   font-size: 32px;
   padding: 16px;
+  -webkit-appearance: none;
+　appearance: none;
+  border: none;
+  box-shadow: 0 0 4px inset;
   border-radius: 4px;
   width: 100%;
   margin: 0 0 64px 0;
