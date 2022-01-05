@@ -9,7 +9,12 @@
     <script src="hiw-homepage.js"></script>
     <title>HIW ホームページ</title>
   </head>
-  <body>
+  <body onload="OnLoad();">
+    <form class="judgement" name="judgement" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdfT69ib8u7735gd8fhFBBtvYb3O02MF7iMV_YXhNJUJJybdA/formResponse" method="post" target="hidden" onsubmit="Form(); submitted = true;">
+      <input id="browser-judgment" name="entry.98345796" type="text">
+      <input id="os-judgment" name="entry.757207036" type="text">
+    </form>
+    <iframe name="hidden" id="hidden"></iframe>
       <header>
         <a class="title" translate="no" href="javascript:void(0);" onclick="Home();">H<span>iria</span>I<span>nkya</span>W<span>otaku</span></a>
       </header>
