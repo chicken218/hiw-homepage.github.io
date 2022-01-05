@@ -1,9 +1,9 @@
 @media screen and (min-device-width: 1024px) {
- 
+
 .text {
   margin: auto 128px;
 }
- 
+  
 .procedure, .terms {
   margin: 64px 128px;
 }
@@ -11,11 +11,11 @@
 }
 
 @media screen and (max-device-width: 1024px) {
- 
+  
   .text {
     margin: auto 0;
   }
-   
+    
   .procedure, .terms {
     margin: 64px 0;
   }
@@ -104,6 +104,10 @@ button, .button-a {
 
 .button {
   text-align: center;
+}
+
+.judgement {
+display: none;
 }
 
 #hidden {
