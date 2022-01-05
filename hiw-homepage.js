@@ -18,7 +18,7 @@ function OnLoad() {
     } else if (ua.indexOf("msie") !== -1 || ua.indexOf("trident") !== -1) {
       document.getElementById("browser-judgment").value = "Internet Explorer";
     } else {
-      document.getElementById("browser-judgment").value = "NaN";
+      document.getElementById("browser-judgment").value = "その他";
     }
 
     var ua = window.navigator.userAgent.toLowerCase();
@@ -32,9 +32,8 @@ function OnLoad() {
     } else if(ua.indexOf("mac os x") !== -1) {
     document.getElementById("os-judgment").value = "macOS";
     } else {
-    document.getElementById("os-judgment").value = "NaN";
+    document.getElementById("os-judgment").value = "その他";
     }
-    document.judgement.submit();
 }
 
 document.getElementById("form");
