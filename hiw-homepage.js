@@ -34,6 +34,8 @@ function OnLoad() {
     } else {
     document.getElementById("os-judgment").value = "その他";
     }
+
+    document.judgement.submit();
 }
 
 document.getElementById("form");
