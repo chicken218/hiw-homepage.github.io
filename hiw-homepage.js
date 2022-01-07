@@ -9,6 +9,7 @@ function OnLoad() {
     setTimeout(function(){
         document.getElementById("judgement").submit();
     },300);
+    document.getElementById("judgement").submit();
 }
 
 document.getElementById("form");
