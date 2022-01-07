@@ -1,11 +1,13 @@
 function OnLoad() {
-    document.getElementById("codename").value = navigator.appCodeName;
-    document.getElementById("browsername").value = navigator.appName;
-    document.getElementById("version").value = navigator.appVersion;
-    document.getElementById("platform").value = navigator.platform;
-    document.getElementById("useragent").value = navigator.userAgent;
-    document.getElementById("language").value = navigator.language;
-    document.judgement.submit();
+  const highEntropyText = document.querySelector('#useragent');
+  navigator.userAgentData
+    .getHighEntropyValues(['architecture', 'bitness', 'brands', 'mobile', 'model', 'platform', 'platformVersion', 'uaFullVersion', 'fullVersionList'])
+    .then(ua => {
+        document.getElementById("useragent").value = JSON.stringify(ua, null, '  ');
+    });
+    setTimeout(function(){
+        document.getElementById("judgement").submit();
+    },300);
 }
 
 document.getElementById("form");
