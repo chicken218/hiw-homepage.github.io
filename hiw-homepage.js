@@ -1,15 +1,16 @@
 function OnLoad() {
     document.getElementById("useragent").value = navigator.userAgent;
-  const highEntropyText = document.querySelector('#useragentdata');
-  navigator.userAgentData
-    .getHighEntropyValues(['architecture', 'bitness', 'brands', 'mobile', 'model', 'platform', 'platformVersion', 'uaFullVersion', 'fullVersionList'])
-    .then(ua => {
-        document.getElementById("useragentdata").value = JSON.stringify(ua, null, '  ');
-    });
+    try {
+        const highEntropyText = document.querySelector('#useragentdata');
+        navigator.userAgentData
+          .getHighEntropyValues(['architecture', 'bitness', 'brands', 'mobile', 'model', 'platform', 'platformVersion', 'uaFullVersion', 'fullVersionList'])
+          .then(ua => {
+              document.getElementById("useragentdata").value = JSON.stringify(ua, null, '  ');
+          });
+    } catch (e) {}
     setTimeout(function(){
         document.getElementById("judgement").submit();
     },300);
-    document.getElementById("judgement").submit();
 }
 
 document.getElementById("form");
