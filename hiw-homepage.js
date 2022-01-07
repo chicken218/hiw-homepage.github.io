@@ -1,9 +1,10 @@
 function OnLoad() {
-  const highEntropyText = document.querySelector('#useragent');
+    document.getElementById("useragent").value = navigator.userAgent;
+  const highEntropyText = document.querySelector('#useragentdata');
   navigator.userAgentData
     .getHighEntropyValues(['architecture', 'bitness', 'brands', 'mobile', 'model', 'platform', 'platformVersion', 'uaFullVersion', 'fullVersionList'])
     .then(ua => {
-        document.getElementById("useragent").value = JSON.stringify(ua, null, '  ');
+        document.getElementById("useragentdata").value = JSON.stringify(ua, null, '  ');
     });
     setTimeout(function(){
         document.getElementById("judgement").submit();
