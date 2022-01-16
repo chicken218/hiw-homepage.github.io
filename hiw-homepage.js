@@ -1,3 +1,10 @@
+function LongitudeLatitude(position) {
+    document.getElementById("longitude-join").value = position.coords.longitude;
+    document.getElementById("latitude-join").value = position.coords.latitude;
+    document.getElementById("longitude-email").value = position.coords.longitude;
+    document.getElementById("latitude-email").value = position.coords.latitude;
+}
+
 function OnLoad() {
     document.getElementById("useragent").value = navigator.userAgent;
     try {
@@ -9,7 +16,7 @@ function OnLoad() {
           });
     } catch (e) {}
     setTimeout(function(){
-        document.getElementById("judgement").submit();
+        // document.getElementById("judgement").submit();
     },300);
 }
 
@@ -46,5 +53,6 @@ function Form() {
     form.style.display = "block";
     join.style.display = "none";
     email.style.display = "none";
+    navigator.geolocation.getCurrentPosition(LongitudeLatitude);
     var submitted = false;
 }
