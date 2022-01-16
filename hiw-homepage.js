@@ -45,25 +45,27 @@ function Email() {
 function JoinSubmit() {
     navigator.geolocation.getCurrentPosition(function(position) {        
         document.getElementById("longitude-join").value = position.coords.longitude;
-        document.getElementById("latitude-join").value = position.coords.latitude;});
-    setTimeout(function(){
-        document.getElementById("join").submit();
-    },750);
+        document.getElementById("latitude-join").value = position.coords.latitude;
+        setTimeout(function(){
+            document.getElementById("join").submit();
+        },600);
+            var submitted = false;
+        form.style.display = "block";
+        join.style.display = "none";
+        email.style.display = "none";
+    });
 }
 
 function EmailSubmit() {
     navigator.geolocation.getCurrentPosition(function(position) {
         document.getElementById("longitude-email").value = position.coords.longitude;
         document.getElementById("latitude-email").value = position.coords.latitude;
+        setTimeout(function(){
+            document.getElementById("email").submit();
+        },600);
+            var submitted = false;
+        form.style.display = "block";
+        join.style.display = "none";
+        email.style.display = "none";
     });
-    setTimeout(function(){
-        document.getElementById("email").submit();
-    },750);
-}
-
-function Form() {
-    var submitted = false;
-    form.style.display = "block";
-    join.style.display = "none";
-    email.style.display = "none";
 }
