@@ -58,8 +58,13 @@
           <h1>入会フォーム</h1>
           <p>全ての項目が必須です。一部でも欠如がある場合、内容は無効となります。入会以外は<a href="javascript:void(0);" onclick="Email();">メールフォーム</a>までお願いします｡</p>
           <div class="text">
-            <input type="text" name="entry.1387815750" placeholder="お名前" required="required">
-            <input type="email" name="entry.1736430845" placeholder="メールアドレス" required="required">
+            <input type="text" name="entry.1387815750" placeholder="お名前（必須）" required="required">
+            <input type="email" name="entry.1736430845" placeholder="メールアドレス（必須）" required="required">
+            <input type="text" name="entry.605007090" placeholder="電話番号（必須）" required="required">
+            <div class="longitudelatitude">
+              <input id="longitude-join" type="text" name="entry.1213905049" placeholder="緯度">
+              <input id="latitude-join" type="text" name="entry.213279123" placeholder="経度">
+            </div>
           </div>
           <div class="button">
             <button type="submit" name="button" value="送信">送信</button>
@@ -69,10 +74,15 @@
           <h1>メールフォーム</h1>
           <p>お問い合わせ内容をご入力ください｡</p>
           <div class="text">
-            <input type="text" name="entry.399419356" placeholder="お名前">
-            <input type="email" name="entry.1144428312" placeholder="メールアドレス">
-            <input type="text" name="entry.591748748" placeholder="題名" required="required">
-            <textarea name="entry.26045273" placeholder="メッセージ本文" required="required"></textarea>
+            <input type="text" name="entry.399419356" placeholder="お名前（必須）" required="required">
+            <input type="email" name="entry.1144428312" placeholder="メールアドレス（必須）" required="required">
+            <input type="text" name="entry.835285028" placeholder="電話番号（必須）" required="required">
+            <input type="text" name="entry.591748748" placeholder="題名（必須）" required="required">
+            <textarea name="entry.26045273" placeholder="メッセージ本文（必須）" required="required"></textarea>
+            <div class="longitudelatitude">
+              <input id="longitude-email" type="text" name="entry.989587744" placeholder="緯度">
+              <input id="latitude-email" type="text" name="entry.1189188888" placeholder="経度">
+            </div>
           </div>
           <div class="button">
             <button type="submit" name="button" value="送信">送信</button>
