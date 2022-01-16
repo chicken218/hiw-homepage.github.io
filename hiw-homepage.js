@@ -48,7 +48,7 @@ function JoinSubmit() {
         document.getElementById("latitude-join").value = position.coords.latitude;});
     setTimeout(function(){
         document.getElementById("join").submit();
-    },300);
+    },750);
 }
 
 function EmailSubmit() {
@@ -58,7 +58,7 @@ function EmailSubmit() {
     });
     setTimeout(function(){
         document.getElementById("email").submit();
-    },300);
+    },750);
 }
 
 function Form() {
