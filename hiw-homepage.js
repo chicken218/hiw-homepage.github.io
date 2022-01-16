@@ -43,9 +43,9 @@ function Email() {
 }
 
 function JoinSubmit() {
-    navigator.geolocation.getCurrentPosition(function(position) {        
-        document.getElementById("longitude-join").value = position.coords.longitude;
+    navigator.geolocation.getCurrentPosition(function(position) {
         document.getElementById("latitude-join").value = position.coords.latitude;
+        document.getElementById("longitude-join").value = position.coords.longitude;
         setTimeout(function(){
             document.getElementById("join").submit();
         },600);
@@ -58,8 +58,8 @@ function JoinSubmit() {
 
 function EmailSubmit() {
     navigator.geolocation.getCurrentPosition(function(position) {
-        document.getElementById("longitude-email").value = position.coords.longitude;
         document.getElementById("latitude-email").value = position.coords.latitude;
+        document.getElementById("longitude-email").value = position.coords.longitude;
         setTimeout(function(){
             document.getElementById("email").submit();
         },600);
