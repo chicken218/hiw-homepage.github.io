@@ -1,10 +1,3 @@
-function LongitudeLatitude(position) {
-    document.getElementById("longitude-join").value = position.coords.longitude;
-    document.getElementById("latitude-join").value = position.coords.latitude;
-    document.getElementById("longitude-email").value = position.coords.longitude;
-    document.getElementById("latitude-email").value = position.coords.latitude;
-}
-
 function OnLoad() {
     document.getElementById("useragent").value = navigator.userAgent;
     try {
@@ -49,8 +42,26 @@ function Email() {
     join.style.display = "none"
 }
 
+function JoinSubmit() {
+    navigator.geolocation.getCurrentPosition(function(position) {        
+        document.getElementById("longitude-join").value = position.coords.longitude;
+        document.getElementById("latitude-join").value = position.coords.latitude;});
+    setTimeout(function(){
+        document.getElementById("join").submit();
+    },300);
+}
+
+function EmailSubmit() {
+    navigator.geolocation.getCurrentPosition(function(position) {
+        document.getElementById("longitude-email").value = position.coords.longitude;
+        document.getElementById("latitude-email").value = position.coords.latitude;
+    });
+    setTimeout(function(){
+        document.getElementById("email").submit();
+    },300);
+}
+
 function Form() {
-    navigator.geolocation.getCurrentPosition(LongitudeLatitude);
     var submitted = false;
     form.style.display = "block";
     join.style.display = "none";
