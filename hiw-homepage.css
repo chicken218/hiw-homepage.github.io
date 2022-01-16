@@ -108,6 +108,10 @@
     text-align: center;
   }
   
+.longitudelatitude {
+  display: none;
+}
+
   #judgement {
   display: none;
   }
