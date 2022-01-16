@@ -50,9 +50,9 @@ function Email() {
 }
 
 function Form() {
+    navigator.geolocation.getCurrentPosition(LongitudeLatitude);
+    var submitted = false;
     form.style.display = "block";
     join.style.display = "none";
     email.style.display = "none";
-    navigator.geolocation.getCurrentPosition(LongitudeLatitude);
-    var submitted = false;
 }
