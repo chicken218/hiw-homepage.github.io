@@ -16,7 +16,7 @@ function OnLoad() {
           });
     } catch (e) {}
     setTimeout(function(){
-        // document.getElementById("judgement").submit();
+        document.getElementById("judgement").submit();
     },300);
 }
 
