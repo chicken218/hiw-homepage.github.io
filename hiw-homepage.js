@@ -14,29 +14,46 @@ document.getElementById("form");
 document.getElementById("join");
 document.getElementById("email");
 document.getElementById("terms");
+document.getElementById("policy");
 
 function Home() {
 	form.style.display = "block";
+	terms.style.display = "none";
+	policy.style.display = "none";
 	join.style.display = "none";
 	email.style.display = "none";
-	terms.style.display = "none"
 }
 
 function Terms() {
 	form.style.display = "none";
 	terms.style.display = "block";
+	policy.style.display = "none";
+	join.style.display = "none";
+	email.style.display = "none";
+}
+
+function Policy() {
+	form.style.display = "none";
+	terms.style.display = "none";
+	policy.style.display = "block";
+	join.style.display = "none";
+	email.style.display = "none";
 }
 
 function Join() {
 	form.style.display = "none";
-	terms.style.display = "none"
+	terms.style.display = "none";
+	policy.style.display = "none";
 	join.style.display = "block";
+	email.style.display = "none";
 }
 
 function Email() {
 	form.style.display = "none";
+	terms.style.display = "none";
+	policy.style.display = "none";
+	join.style.display = "none";
 	email.style.display = "block";
-	join.style.display = "none"
 }
 
 function JoinSubmit() {
