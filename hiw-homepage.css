@@ -3,7 +3,7 @@
 	.text {
 		margin: auto 128px;
 	}
-	.procedure, .terms {
+	.procedure, .terms, .policy {
 		margin: 64px 128px;
 	}
 }
@@ -11,7 +11,7 @@
 	.text {
 		margin: auto 0;
 	}
-	.procedure, .terms {
+	.procedure, .terms, .policy {
 		margin: 64px 0;
 	}
 }
@@ -26,7 +26,6 @@ body {
 }
 header {
 	padding-top: 64px;
-	/* box-shadow: 0 0 4px; */
 	text-align: center;
 }
 main {
@@ -116,10 +115,7 @@ button, .button-a {
 	height: 100vh;
 	vertical-align: bottom;
 }
-#join, #email {
-	display: none;
-}
-#terms {
+#join, #email, #policy, #terms {
 	display: none;
 }
 .terms {
@@ -128,7 +124,7 @@ button, .button-a {
 .procedure:hover, .procedure:active {
 	display: block;
 }
-.procedure, .terms {
+.procedure, .terms, .policy {
 	border-radius: 4px;
 	box-shadow: 0 0 4px;
 	padding: 64px 64px;
