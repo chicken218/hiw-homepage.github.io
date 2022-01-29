@@ -19,7 +19,6 @@ function OnLoad() {
 	const headerHeight = header.offsetHeight + 64 + "px 128px auto 128px";
 	main.style.margin = headerHeight;
 }
-
 document.getElementById("form");
 document.getElementById("join");
 document.getElementById("email");
@@ -72,11 +71,11 @@ function Email() {
 }
 
 function OnSubmit() {
-		var submitted = false;
-		form.style.display = "block";
-		join.style.display = "none";
-		email.style.display = "none";
-		member.style.display = "none";
+	var submitted = false;
+	form.style.display = "block";
+	join.style.display = "none";
+	email.style.display = "none";
+	member.style.display = "none";
 }
 
 function MemberDisplay() {
@@ -91,15 +90,14 @@ function MemberDisplay() {
 	certification.style.display = "block";
 	list.style.display = "none";
 }
-
 document.getElementById("pin");
 
 function CertificationFunction() {
-    const input = pin.value;
-    const hexadecimal = 457;
-    const decimal = parseInt(hexadecimal, 16);
-    if (input == decimal) {
-        list.style.display = "block";
-        certification.style.display = "none";
-    }
+	const input = pin.value;
+	const hexadecimal = 457;
+	const decimal = parseInt(hexadecimal, 16);
+	if (input == decimal) {
+		list.style.display = "block";
+		certification.style.display = "none";
+	}
 }
