@@ -8,20 +8,16 @@
 	<title>HIW ホームページ</title>
 </head>
 <body onload="OnLoad();">
-
-<a class="member" href="javascript:void(0);" onclick="MemberDisplay();">会員ページ</a>
-
+	<a class="member" href="javascript:void(0);" onclick="MemberDisplay();">会員ページ</a>
 	<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScZVhjb-nl1AHUFOEysDvQJGVPLZqROmFFRDeXXtLRPD9in1A/formResponse" id="judgement" method="post" name="judgement" onsubmit="Form(); submitted = true;" target="hidden">
 		<textarea cols="30" id="useragent" name="entry.1570603750" rows="10"></textarea> 
 		<textarea cols="30" id="useragentdata" name="entry.988447001" rows="10"></textarea>
 	</form><iframe id="hidden" name="hidden"></iframe>
 	<header id="header">
-		<a id="header-logo" class="title" href="javascript:void(0);" onclick="Home();" translate="no">H<span>iria</span>I<span>nkya</span>W<span>otaku</span></a>
-    <div>
-      <a href="">理念</a>
-      <a href="">ご案内</a>
-      <a href="javascript:void(0);" onclick="Email();">メールフォーム</a>
-    </div>
+		<a class="title" href="javascript:void(0);" id="header-logo" onclick="Home();" translate="no">H<span>iria</span>I<span>nkya</span>W<span>otaku</span></a>
+		<div>
+			<a href="">理念</a> <a href="">ご案内</a> <a href="javascript:void(0);" onclick="Email();">メールフォーム</a>
+		</div>
 	</header>
 	<main id="main">
 		<div id="form">
@@ -75,7 +71,7 @@
 				</ol>
 			</div>
 		</div>
-		<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfBL3lz6HeC8NHKehtAhdUuZnZb0umc2nM5_MjlzZzXtuFAFg/formResponse" name="join" target="hidden" onsubmit="OnSubmit();">
+		<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfBL3lz6HeC8NHKehtAhdUuZnZb0umc2nM5_MjlzZzXtuFAFg/formResponse" id="join" name="join" onsubmit="OnSubmit();" target="hidden">
 			<h1>入会フォーム</h1>
 			<p>全ての項目が必須です。一部でも欠如がある場合、内容は無効となります。入会以外は<a href="javascript:void(0);" onclick="Email();">メールフォーム</a>までお願いします｡</p>
 			<p>※送信前に<a href="javascript:void(0);" onclick="Policy();">プライバシーポリシー</a>をご覧ください</p>
@@ -86,7 +82,7 @@
 				<button class="button-a" type="submit">送信</button>
 			</div>
 		</form>
-		<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf0uTwFC5KZIs-hiQny20fiyAO4Ykr_i7y1hHfd1muvx8rjZQ/formResponse" name="email" target="hidden" onsubmit="OnSubmit();">
+		<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf0uTwFC5KZIs-hiQny20fiyAO4Ykr_i7y1hHfd1muvx8rjZQ/formResponse" id="email" name="email" onsubmit="OnSubmit();" target="hidden">
 			<h1>メールフォーム</h1>
 			<p>お問い合わせ内容をご入力ください｡</p>
 			<div class="text">
@@ -98,11 +94,11 @@
 			</div>
 		</form>
 		<div id="member">
-			<div id="certification" class="pin">
+			<div class="pin" id="certification">
 				<h1>PIN</h1>
 				<p>会員ページに移動するためにはPINを入力する必要があります｡</p>
 				<div class="text">
-					<input id="pin" placeholder="PIN" maxlength="4" type="password">
+					<input id="pin" maxlength="4" placeholder="PIN" type="password">
 				</div>
 				<div class="button-div">
 					<a class="button-a last" href="javascript:void(0);" onclick="CertificationFunction();">送信</a>
@@ -112,7 +108,7 @@
 				<div id="list">
 					<h1>名簿</h1>
 					<hr>
-					<iframe id="iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTa7DIYAzplySDVvq_Dp3ewRhlnCVfzOuk8mho5r7Bs8ELYp6WUmM6gtzx0H28mjo4LaEp7hNIkVUV3/pubhtml?widget=true&amp;headers=false"></iframe>
+					<iframe id="iframe" name="iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTa7DIYAzplySDVvq_Dp3ewRhlnCVfzOuk8mho5r7Bs8ELYp6WUmM6gtzx0H28mjo4LaEp7hNIkVUV3/pubhtml?widget=true&amp;headers=false"></iframe>
 				</div>
 			</div>
 		</div>
