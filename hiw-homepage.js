@@ -112,10 +112,10 @@ function MemberDisplay() {
 }
 
 function CertificationFunction() {
-    const ABC = pin.value;
-    const BCA = 457;
-    const CAB = parseInt(BCA, 16);
-    if (ABC == CAB) {
+    const input = pin.value;
+    const hexadecimal = 457;
+    const decimal = parseInt(hexadecimal, 16);
+    if (input == decimal) {
         list.style.display = "block";
         certification.style.display = "none";
     }
