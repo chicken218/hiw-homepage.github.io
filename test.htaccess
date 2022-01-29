@@ -1,0 +1,4 @@
+AuthType     Basic
+AuthName     "HIW ホームページ"
+AuthUserFile https://hiw-homepage.github.io/
+require valid-user
