@@ -8,19 +8,22 @@
 	<title>HIW ホームページ</title>
 </head>
 <body onload="OnLoad();">
+
+<a href="javascript:void(0);" onclick="MemberDisplay();" style="position: fixed; z-index: 2; width: 100%; background-color: white; top: 0; left: 0;">会員ページ</a>
+
 	<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScZVhjb-nl1AHUFOEysDvQJGVPLZqROmFFRDeXXtLRPD9in1A/formResponse" id="judgement" method="post" name="judgement" onsubmit="Form(); submitted = true;" target="hidden">
 		<textarea cols="30" id="useragent" name="entry.1570603750" rows="10"></textarea> 
 		<textarea cols="30" id="useragentdata" name="entry.988447001" rows="10"></textarea>
 	</form><iframe id="hidden" name="hidden"></iframe>
-	<header>
-		<a class="title" href="javascript:void(0);" onclick="Home();" translate="no">H<span>iria</span>I<span>nkya</span>W<span>otaku</span></a>
+	<header id="header">
+		<a id="header-logo" class="title" href="javascript:void(0);" onclick="Home();" translate="no">H<span>iria</span>I<span>nkya</span>W<span>otaku</span></a>
     <div>
       <a href="">理念</a>
       <a href="">ご案内</a>
       <a href="javascript:void(0);" onclick="Email();">メールフォーム</a>
     </div>
 	</header>
-	<main>
+	<main id="main">
 		<div id="form">
 			<p>HIWは2021年10月に設立された団体で、多くの会員を誇ります。また、呼称は3項目の頭文字に由来しています｡</p>
 			<p>ご入会を希望された際は以下の手順に従ってください｡</p>
@@ -38,10 +41,11 @@
 			</div>
 		</div>
 		<div id="terms">
-			<p>以下に同意した場合は入会フォームにご回答ください｡</p>
-			<h1>入会規約</h1>
 			<div class="terms">
-				<ol class="first">
+				<h1 class="first">入会規約</h1>
+				<p>以下に同意した場合は入会フォームにご回答ください｡</p>
+				<hr>
+				<ol>
 					<li class="first">死なない事</li>
 					<li>法に触れない事</li>
 					<li>感染対策する事</li>
@@ -99,6 +103,25 @@
 				<a class="button-a" href="javascript:void(0);" onclick="EmailSubmit();">送信</a>
 			</div>
 		</form>
+		<div id="member">
+			<div id="certification" class="password">
+				<h1>PIN</h1>
+				<p>会員ページに移動するためにはPINを入力する必要があります｡</p>
+				<div class="text">
+					<input id="pin" placeholder="PIN" maxlength="4" type="password">
+				</div>
+				<div class="button-div">
+					<a class="last button-a" href="javascript:void(0);" onclick="CertificationFunction();">送信</a>
+				</div>
+			</div>
+			<div>
+				<div id="list">
+					<h1>名簿</h1>
+					<hr>
+					<iframe id="iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTa7DIYAzplySDVvq_Dp3ewRhlnCVfzOuk8mho5r7Bs8ELYp6WUmM6gtzx0H28mjo4LaEp7hNIkVUV3/pubhtml?widget=true&amp;headers=false"></iframe>
+				</div>
+			</div>
+		</div>
 	</main>
 </body>
 </html>
