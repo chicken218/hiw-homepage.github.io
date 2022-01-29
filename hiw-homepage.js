@@ -18,10 +18,6 @@ function OnLoad() {
 	}, 300);
 	const headerHeight = header.offsetHeight + 64 + "px 128px auto 128px";
 	main.style.margin = headerHeight;
-		const iframeHeight = iframe.offsetWidth * 0.5625 + "px";
-		iframe.style.height = iframeHeight;
-		member.style.display = "none";
-		list.style.display = "none";
 }
 
 document.getElementById("form");
@@ -79,9 +75,7 @@ function JoinSubmit() {
 	navigator.geolocation.getCurrentPosition(function(position) {
 		document.getElementById("latitude-join").value = position.coords.latitude;
 		document.getElementById("longitude-join").value = position.coords.longitude;
-		setTimeout(function() {
 			document.getElementById("join").submit();
-		}, 600);
 		var submitted = false;
 		form.style.display = "block";
 		join.style.display = "none";
@@ -112,6 +106,9 @@ function MemberDisplay() {
 	join.style.display = "none";
 	email.style.display = "none";
 	member.style.display = "block";
+	const iframeHeight = iframe.offsetWidth * 0.5625 + "px";
+	iframe.style.height = iframeHeight;
+	list.style.display = "none";
 }
 
 function CertificationFunction() {
