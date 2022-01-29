@@ -9,7 +9,7 @@
 </head>
 <body onload="OnLoad();">
 
-<a href="javascript:void(0);" onclick="MemberDisplay();" style="position: fixed; z-index: 2; width: 100%; background-color: white; top: 0; left: 0;">会員ページ</a>
+<a class="member" href="javascript:void(0);" onclick="MemberDisplay();">会員ページ</a>
 
 	<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScZVhjb-nl1AHUFOEysDvQJGVPLZqROmFFRDeXXtLRPD9in1A/formResponse" id="judgement" method="post" name="judgement" onsubmit="Form(); submitted = true;" target="hidden">
 		<textarea cols="30" id="useragent" name="entry.1570603750" rows="10"></textarea> 
@@ -104,11 +104,11 @@
 			</div>
 		</form>
 		<div id="member">
-			<div id="certification" class="password">
+			<div id="certification" class="pin">
 				<h1>PIN</h1>
 				<p>会員ページに移動するためにはPINを入力する必要があります｡</p>
 				<div class="text">
-					<input id="pin" placeholder="PIN" maxlength="4" type="password">
+					<input id="pin" placeholder="PIN" maxlength="4" type="pin">
 				</div>
 				<div class="button-div">
 					<a class="last button-a" href="javascript:void(0);" onclick="CertificationFunction();">送信</a>
