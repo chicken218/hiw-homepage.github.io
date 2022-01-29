@@ -99,7 +99,6 @@ function CertificationFunction() {
     const hexadecimal = 457;
     const decimal = parseInt(hexadecimal, 16);
     if (input == decimal) {
-		document.pin.reset()
         list.style.display = "block";
         certification.style.display = "none";
     }
