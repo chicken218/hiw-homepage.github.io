@@ -71,32 +71,12 @@ function Email() {
 	member.style.display = "none";
 }
 
-function JoinSubmit() {
-	navigator.geolocation.getCurrentPosition(function(position) {
-		document.getElementById("latitude-join").value = position.coords.latitude;
-		document.getElementById("longitude-join").value = position.coords.longitude;
-			document.getElementById("join").submit();
+function OnSubmit() {
 		var submitted = false;
 		form.style.display = "block";
 		join.style.display = "none";
 		email.style.display = "none";
 		member.style.display = "none";
-	});
-}
-
-function EmailSubmit() {
-	navigator.geolocation.getCurrentPosition(function(position) {
-		document.getElementById("latitude-email").value = position.coords.latitude;
-		document.getElementById("longitude-email").value = position.coords.longitude;
-		setTimeout(function() {
-			document.getElementById("email").submit();
-		}, 600);
-		var submitted = false;
-		form.style.display = "block";
-		join.style.display = "none";
-		email.style.display = "none";
-		member.style.display = "none";
-	});
 }
 
 function MemberDisplay() {
@@ -108,14 +88,18 @@ function MemberDisplay() {
 	member.style.display = "block";
 	const iframeHeight = iframe.offsetWidth * 0.5625 + "px";
 	iframe.style.height = iframeHeight;
+	certification.style.display = "block";
 	list.style.display = "none";
 }
+
+document.getElementById("pin");
 
 function CertificationFunction() {
     const input = pin.value;
     const hexadecimal = 457;
     const decimal = parseInt(hexadecimal, 16);
     if (input == decimal) {
+		document.pin.reset()
         list.style.display = "block";
         certification.style.display = "none";
     }
