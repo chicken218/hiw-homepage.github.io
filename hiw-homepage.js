@@ -7,6 +7,8 @@ document.getElementById("list");
 document.getElementById("certification");
 
 function OnLoad() {
+	const iframeHeight = iframe.offsetWidth * 0.5625 + "px";
+	iframe.style.height = iframeHeight;
 	certification.style.display = "none";
 	list.style.display = "none";
 	document.getElementById("useragent").value = navigator.userAgent;
@@ -21,8 +23,6 @@ function OnLoad() {
 	}, 300);
 	const headerHeight = header.offsetHeight + 64 + "px 128px auto 128px";
 	main.style.margin = headerHeight;
-	const iframeHeight = iframe.offsetWidth * 0.5625 + "px";
-	iframe.style.height = iframeHeight;
 }
 document.getElementById("form");
 document.getElementById("join");
