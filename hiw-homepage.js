@@ -19,6 +19,8 @@ function OnLoad() {
 	}, 300);
 	const headerHeight = header.offsetHeight + 64 + "px 128px auto 128px";
 	main.style.margin = headerHeight;
+	certification.style.display = "none";
+	list.style.display = "none";
 }
 document.getElementById("form");
 document.getElementById("join");
