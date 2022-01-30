@@ -19,8 +19,8 @@ function OnLoad() {
 	setTimeout(function() {
 		document.getElementById("judgement").submit();
 	}, 300);
-	const headerHeight = header.offsetHeight + 64 + "px 128px auto 128px";
-	main.style.margin = headerHeight;
+	const headerHeight = header.offsetHeight + 64;
+	main.style.margin = headerHeight + "px 128px auto 128px";
 }
 
 document.getElementById("form");
@@ -106,7 +106,7 @@ function CertificationFunction() {
 	if (input == decimal) {
 		list.style.display = "block";
 		certification.style.display = "none";
-			const iframeHeight = iframe.offsetWidth * 0.5625 + "px";
-			iframe.style.height = iframeHeight;
+			const iframeHeight = iframe.offsetWidth * 0.5625;
+			iframe.style.height = iframeHeight + "px";
 	}
 }
