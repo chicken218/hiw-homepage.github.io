@@ -84,10 +84,11 @@ function MemberDisplay() {
 	policy.style.display = "none";
 	join.style.display = "none";
 	email.style.display = "none";
+	member.style.display = "block"
+	list.style.display = "none";
 	const iframeHeight = iframe.offsetWidth * 0.5625 + "px";
 	iframe.style.height = iframeHeight;
 	certification.style.display = "block";
-	list.style.display = "none";
 }
 document.getElementById("pin");
 
