@@ -206,9 +206,6 @@ iframe {
 	vertical-align: bottom;
 	border: none;
 }
-#member {
-	display: none;
-}
 .member {
 	position: fixed;
 	z-index: 2;
