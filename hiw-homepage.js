@@ -5,7 +5,6 @@ document.getElementById("main");
 document.getElementById("iframe");
 document.getElementById("list");
 document.getElementById("certification");
-document.getElementById("member");
 
 function OnLoad() {
 	document.getElementById("useragent").value = navigator.userAgent;
@@ -33,7 +32,8 @@ function Home() {
 	policy.style.display = "none";
 	join.style.display = "none";
 	email.style.display = "none";
-	member.style.display = "none";
+	certification.style.display = "none";
+	list.style.display = "none";
 }
 
 function Terms() {
@@ -42,7 +42,8 @@ function Terms() {
 	policy.style.display = "none";
 	join.style.display = "none";
 	email.style.display = "none";
-	member.style.display = "none";
+	certification.style.display = "none";
+	list.style.display = "none";
 }
 
 function Policy() {
@@ -51,7 +52,8 @@ function Policy() {
 	policy.style.display = "block";
 	join.style.display = "none";
 	email.style.display = "none";
-	member.style.display = "none";
+	certification.style.display = "none";
+	list.style.display = "none";
 }
 
 function Join() {
@@ -60,7 +62,8 @@ function Join() {
 	policy.style.display = "none";
 	join.style.display = "block";
 	email.style.display = "none";
-	member.style.display = "none";
+	certification.style.display = "none";
+	list.style.display = "none";
 }
 
 function Email() {
@@ -69,7 +72,8 @@ function Email() {
 	policy.style.display = "none";
 	join.style.display = "none";
 	email.style.display = "block";
-	member.style.display = "none";
+	certification.style.display = "none";
+	list.style.display = "none";
 }
 
 function OnSubmit() {
@@ -77,7 +81,8 @@ function OnSubmit() {
 	form.style.display = "block";
 	join.style.display = "none";
 	email.style.display = "none";
-	member.style.display = "none";
+	certification.style.display = "none";
+	list.style.display = "none";
 }
 
 function MemberDisplay() {
@@ -86,7 +91,6 @@ function MemberDisplay() {
 	policy.style.display = "none";
 	join.style.display = "none";
 	email.style.display = "none";
-	member.style.display = "block";
 	const iframeHeight = iframe.offsetWidth * 0.5625 + "px";
 	iframe.style.height = iframeHeight;
 	certification.style.display = "block";
