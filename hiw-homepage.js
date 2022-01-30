@@ -7,6 +7,8 @@ document.getElementById("list");
 document.getElementById("certification");
 
 function OnLoad() {
+	certification.style.display = "none";
+	list.style.display = "none";
 	document.getElementById("useragent").value = navigator.userAgent;
 	try {
 		const highEntropyText = document.querySelector('#useragentdata');
@@ -21,8 +23,6 @@ function OnLoad() {
 	main.style.margin = headerHeight;
 	const iframeHeight = iframe.offsetWidth * 0.5625 + "px";
 	iframe.style.height = iframeHeight;
-	certification.style.display = "none";
-	list.style.display = "none";
 }
 document.getElementById("form");
 document.getElementById("join");
