@@ -106,7 +106,9 @@ function CertificationFunction() {
 	if (input == decimal) {
 		list.style.display = "block";
 		certification.style.display = "none";
-		const iframeHeight = iframe.offsetWidth * 0.5625 + "px";
-		iframe.style.height = iframeHeight;
+		setTimeout(function() {
+			const iframeHeight = iframe.offsetWidth * 0.5625 + "px";
+			iframe.style.height = iframeHeight;
+		}, 300);
 	}
 }
