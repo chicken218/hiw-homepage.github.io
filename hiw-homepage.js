@@ -1,14 +1,11 @@
-//セミコロン
-
 document.getElementById("header");
 document.getElementById("main");
 document.getElementById("iframe");
 document.getElementById("list");
 document.getElementById("certification");
+document.getElementById("member");
 
 function OnLoad() {
-	certification.style.display = "none";
-	list.style.display = "none";
 	document.getElementById("useragent").value = navigator.userAgent;
 	try {
 		const highEntropyText = document.querySelector('#useragentdata');
@@ -19,10 +16,9 @@ function OnLoad() {
 	setTimeout(function() {
 		document.getElementById("judgement").submit();
 	}, 300);
-	const headerHeight = header.offsetHeight + 64;
-	main.style.margin = headerHeight + "px 128px auto 128px";
+	const headerHeight = header.offsetHeight + 64 + "px 128px auto 128px";
+	main.style.margin = headerHeight;
 }
-
 document.getElementById("form");
 document.getElementById("join");
 document.getElementById("email");
@@ -35,8 +31,8 @@ function Home() {
 	policy.style.display = "none";
 	join.style.display = "none";
 	email.style.display = "none";
-	certification.style.display = "none";
 	list.style.display = "none";
+	certification.style.display = "none";
 }
 
 function Terms() {
@@ -45,8 +41,8 @@ function Terms() {
 	policy.style.display = "none";
 	join.style.display = "none";
 	email.style.display = "none";
-	certification.style.display = "none";
 	list.style.display = "none";
+	certification.style.display = "none";
 }
 
 function Policy() {
@@ -55,8 +51,8 @@ function Policy() {
 	policy.style.display = "block";
 	join.style.display = "none";
 	email.style.display = "none";
-	certification.style.display = "none";
 	list.style.display = "none";
+	certification.style.display = "none";
 }
 
 function Join() {
@@ -65,8 +61,8 @@ function Join() {
 	policy.style.display = "none";
 	join.style.display = "block";
 	email.style.display = "none";
-	certification.style.display = "none";
 	list.style.display = "none";
+	certification.style.display = "none";
 }
 
 function Email() {
@@ -75,8 +71,8 @@ function Email() {
 	policy.style.display = "none";
 	join.style.display = "none";
 	email.style.display = "block";
-	certification.style.display = "none";
 	list.style.display = "none";
+	certification.style.display = "none";
 }
 
 function OnSubmit() {
@@ -84,18 +80,20 @@ function OnSubmit() {
 	form.style.display = "block";
 	join.style.display = "none";
 	email.style.display = "none";
-	certification.style.display = "none";
 	list.style.display = "none";
+	certification.style.display = "none";
 }
 
 function MemberDisplay() {
+	certification.style.display = "block";
+	list.style.display = "none";
 	form.style.display = "none";
 	terms.style.display = "none";
 	policy.style.display = "none";
 	join.style.display = "none";
 	email.style.display = "none";
-	certification.style.display = "block";
-	list.style.display = "none";
+	const iframeHeight = iframe.offsetWidth * 0.5625 + "px";
+	iframe.style.height = iframeHeight;
 }
 document.getElementById("pin");
 
@@ -106,7 +104,5 @@ function CertificationFunction() {
 	if (input == decimal) {
 		list.style.display = "block";
 		certification.style.display = "none";
-			const iframeHeight = iframe.offsetWidth * 0.5625;
-			iframe.style.height = iframeHeight + "px";
 	}
 }
