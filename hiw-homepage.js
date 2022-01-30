@@ -19,6 +19,8 @@ function OnLoad() {
 	}, 300);
 	const headerHeight = header.offsetHeight + 64 + "px 128px auto 128px";
 	main.style.margin = headerHeight;
+	const iframeHeight = iframe.offsetWidth * 0.5625 + "px";
+	iframe.style.height = iframeHeight;
 	certification.style.display = "none";
 	list.style.display = "none";
 }
@@ -94,8 +96,6 @@ function MemberDisplay() {
 	join.style.display = "none";
 	email.style.display = "none";
 	certification.style.display = "block";
-	const iframeHeight = iframe.offsetWidth * 0.5625 + "px";
-	iframe.style.height = iframeHeight;
 	list.style.display = "none";
 }
 document.getElementById("pin");
