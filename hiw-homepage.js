@@ -7,8 +7,8 @@ document.getElementById("list");
 document.getElementById("certification");
 
 function OnLoad() {
-	const iframeHeight = iframe.offsetWidth * 0.5625 + "px";
-	iframe.style.height = iframeHeight;
+	certification.style.display = "none";
+	list.style.display = "none";
 	document.getElementById("useragent").value = navigator.userAgent;
 	try {
 		const highEntropyText = document.querySelector('#useragentdata');
@@ -22,9 +22,6 @@ function OnLoad() {
 	const headerHeight = header.offsetHeight + 64 + "px 128px auto 128px";
 	main.style.margin = headerHeight;
 }
-
-certification.style.display = "none";
-	list.style.display = "none";
 
 document.getElementById("form");
 document.getElementById("join");
@@ -99,6 +96,8 @@ function MemberDisplay() {
 	email.style.display = "none";
 	certification.style.display = "block";
 	list.style.display = "none";
+	const iframeHeight = iframe.offsetWidth * 0.5625 + "px";
+	iframe.style.height = iframeHeight;
 }
 document.getElementById("pin");
 
