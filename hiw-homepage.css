@@ -6,6 +6,9 @@
 	.procedure, .terms, .policy, .pin, #list {
 		margin: 64px 128px;
 	}
+	#iframe {
+		height: calc(calc(100vw - 640px) * 0.5625);
+	}
 }
 @media screen and (max-device-width: 1024px) {
 	.text {
@@ -13,6 +16,9 @@
 	}
 	.procedure, .terms, .policy, .pin, #list {
 		margin: 64px 0;
+	}
+	#iframe {
+		height: calc(calc(100vw - 384px) * 0.5625);
 	}
 }
 body {
@@ -224,7 +230,4 @@ iframe {
 	border-radius: 4px;
 	box-shadow: 0 0 4px;
 	margin-bottom: 64px;
-}
-#iframe {
-	height: calc(calc(100vw - 384px) * 0.5625);
 }
