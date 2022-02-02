@@ -61,8 +61,8 @@ header div a {
 	padding: 16px;
 	color: black;
 	text-decoration: none;
-	font-family: 'Noto Sans JP', sans-serif;
-	font-weight: 500;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
 }
 p, button, form {
 	font-family: 'Noto Sans JP', sans-serif;
@@ -100,8 +100,8 @@ input:focus, textarea:focus {
 }
 button, .button-a {
 	font-size: 32px;
-	font-family: 'Noto Sans JP', sans-serif;
-	font-weight: 700;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 500;
 	color: white;
 	background-color: black;
 	padding: 16px 128px;
