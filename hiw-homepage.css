@@ -88,6 +88,9 @@ li {
 form {
 	display: none;
 }
+form div button {
+	margin-bottom: 64px;
+}
 input, textarea {
 	font-size: 32px;
 	padding: 16px;
