@@ -19,61 +19,66 @@ function OnLoad() {
 	const headerHeight = header.offsetHeight + 64 + "px 128px auto 128px";
 	main.style.margin = headerHeight;
 }
-document.getElementById("form");
-document.getElementById("join");
-document.getElementById("email");
-document.getElementById("terms");
-document.getElementById("policy");
 
-function Home() {
-	form.style.display = "block";
-	terms.style.display = "none";
-	policy.style.display = "none";
-	join.style.display = "none";
-	email.style.display = "none";
-	list.style.display = "none";
-	certification.style.display = "none";
-}
-
-function Terms() {
-	form.style.display = "none";
-	terms.style.display = "block";
-	policy.style.display = "none";
-	join.style.display = "none";
-	email.style.display = "none";
-	list.style.display = "none";
-	certification.style.display = "none";
-}
-
-function Policy() {
-	form.style.display = "none";
-	terms.style.display = "none";
-	policy.style.display = "block";
-	join.style.display = "none";
-	email.style.display = "none";
-	list.style.display = "none";
-	certification.style.display = "none";
-}
-
-function Join() {
-	form.style.display = "none";
-	terms.style.display = "none";
-	policy.style.display = "none";
-	join.style.display = "block";
-	email.style.display = "none";
-	list.style.display = "none";
-	certification.style.display = "none";
-}
-
-function Email() {
-	form.style.display = "none";
-	terms.style.display = "none";
-	policy.style.display = "none";
-	join.style.display = "none";
-	email.style.display = "block";
-	list.style.display = "none";
-	certification.style.display = "none";
-}
+$(function() {
+	$('a').click(function() {
+		return false;
+	});
+	$('.home-button').click(function() {
+		$('#form').show();
+		$('#terms').hide();
+		$('#policy').hide();
+		$('#join').hide();
+		$('#email').hide();
+		$('#list').hide();
+		$('#certification').hide();
+	});
+	$('.terms-button').click(function() {
+		$('#form').hide();
+		$('#terms').show();
+		$('#policy').hide();
+		$('#join').none();
+		$('#email').hide();
+		$('#list').hide();
+		$('#certification').hide();
+	});
+	$('.policy-button').click(function() {
+		$('#form').hide();
+		$('#terms').hide();
+		$('#policy').show();
+		$('#join').hide();
+		$('#email').hide();
+		$('#list').hide();
+		$('#certification').hide();
+	});
+	$('.join-button').click(function() {
+		$('#form').hide();
+		$('#terms').hide();
+		$('#policy').hide();
+		$('#join').show();
+		$('#email').hide();
+		$('#list').hide();
+		$('#certification').hide();
+	});
+	$('.email-button').click(function() {
+		$('#form').hide();
+		$('#terms').hide();
+		$('#policy').hide();
+		$('#join').hide();
+		$('#email').show();
+		$('#list').hide();
+		$('#certification').hide();
+	});
+	$('.member-link').click(function() {
+		$('#form').hide();
+		$('#terms').hide();
+		$('#policy').hide();
+		$('#join').hide();
+		$('#email').hide();
+		$('#list').hide();
+		$('#certification').show();
+	})
+});
 
 function OnSubmit() {
 	var submitted = false;
@@ -84,17 +89,6 @@ function OnSubmit() {
 	certification.style.display = "none";
 }
 
-function MemberDisplay() {
-	certification.style.display = "block";
-	list.style.display = "none";
-	form.style.display = "none";
-	terms.style.display = "none";
-	policy.style.display = "none";
-	join.style.display = "none";
-	email.style.display = "none";
-	const iframeHeight = iframe.offsetWidth * 0.5625 + "px";
-	iframe.style.height = iframeHeight;
-}
 document.getElementById("pin");
 
 function CertificationFunction() {
