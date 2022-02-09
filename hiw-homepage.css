@@ -50,6 +50,9 @@ h1 {
 a:hover {
 	text-decoration: none;
 }
+button:hover {
+	cursor: pointer;
+}
 header div {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -57,27 +60,23 @@ header div {
 	font-size: 32px;
 	box-shadow: 0 0 4px;
 }
-header div a {
+header div button {
 	padding: 16px;
 	color: black;
+	background-color: transparent;
 	text-decoration: none;
 	font-family: 'Noto Sans JP', sans-serif;
 	font-weight: 500;
-}
-header div a {
-	position: relative;
-	display: inline-block;
-	text-decoration: none;
 	border: none;
-  }
-header div a:hover {
+}
+header div button:hover {
 	text-decoration: underline 4px solid;
 	text-underline-position: under;
+	cursor: pointer;
 }
 p, button, form {
 	font-family: 'Noto Sans JP', sans-serif;
 	font-weight: 100;
-	margin: 64px 0;
 	font-size: 32px;
 }
 li {
@@ -108,7 +107,7 @@ input, textarea {
 input:focus, textarea:focus {
 	box-shadow: 0 0 4px inset;
 }
-button, .button-a {
+.button-a {
 	font-size: 32px;
 	font-family: 'Noto Sans JP', sans-serif;
 	font-weight: 700;
@@ -118,8 +117,6 @@ button, .button-a {
 	border: none;
 	border-radius: 4px;
 	margin-top: 0;
-	cursor: pointer;
-	text-decoration: none;
 }
 .button {
 	text-align: center;
@@ -180,8 +177,11 @@ hr {
 	text-decoration: none;
 	font-style: italic;
 	color: black;
+	background-color: transparent;
 	border-top: 4px solid black;
 	border-bottom: 4px solid black;
+	border-left: none;
+	border-right: none;
 	padding: 16px;
 }
 .title span {
