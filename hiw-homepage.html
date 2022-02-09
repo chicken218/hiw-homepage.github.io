@@ -3,20 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<link href="hiw-homepage.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 	<script src="hiw-homepage.js">
 	</script>
 	<title>HIW ホームページ</title>
 </head>
 <body onload="OnLoad();">
-	<a class="member" href="javascript:void(0);" onclick="MemberDisplay();">会員ページ</a>
+	<a href="" class="member member-link">会員ページ</a>
 	<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScZVhjb-nl1AHUFOEysDvQJGVPLZqROmFFRDeXXtLRPD9in1A/formResponse" id="judgement" method="post" name="judgement" onsubmit="Form(); submitted = true;" target="hidden">
 		<textarea cols="30" id="useragent" name="entry.1570603750" rows="10"></textarea> 
 		<textarea cols="30" id="useragentdata" name="entry.988447001" rows="10"></textarea>
 	</form><iframe id="hidden" name="hidden"></iframe>
 	<header id="header">
-		<a class="title" href="javascript:void(0);" id="header-logo" onclick="Home();" translate="no">H<span>iria</span>I<span>nkya</span>W<span>otaku</span></a>
+		<button class="title home-button" id="header-logo" translate="no">H<span>iria</span>I<span>nkya</span>W<span>otaku</span></button>
 		<div>
-			<a href="">理念</a> <a href="">ご案内</a> <a href="javascript:void(0);" onclick="Email();">メールフォーム</a>
+			<button href="">理念</button> <button href="">ご案内</button> <button class="email-button">メールフォーム</button>
 		</div>
 	</header>
 	<main id="main">
@@ -29,7 +30,7 @@
 					<li>入会フォームにご回答ください｡</li>
 				</ol>
 				<div class="button-div">
-					<a class="button-a" href="javascript:void(0);" onclick="Terms();">規約</a>
+					<button class="button-a terms-button">規約</button>
 				</div>
 				<ol start="3">
 					<li class="last">連絡をお待ちください</li>
@@ -56,7 +57,7 @@
 					<li>例外として目的を損なわない提案は容認の場合もある</li>
 				</ol>
 				<div class="button-div-last">
-					<a class="button-a" href="javascript:void(0);" onclick="Join();">入会</a>
+					<button class="button-a join-button">入会</button>
 				</div>
 			</div>
 		</div>
@@ -73,8 +74,8 @@
 		</div>
 		<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfBL3lz6HeC8NHKehtAhdUuZnZb0umc2nM5_MjlzZzXtuFAFg/formResponse" id="join" name="join" onsubmit="OnSubmit();" target="hidden">
 			<h1>入会フォーム</h1>
-			<p>全ての項目が必須です。一部でも欠如がある場合、内容は無効となります。入会以外は<a href="javascript:void(0);" onclick="Email();">メールフォーム</a>までお願いします｡</p>
-			<p>※送信前に<a href="javascript:void(0);" onclick="Policy();">プライバシーポリシー</a>をご覧ください</p>
+			<p>全ての項目が必須です。一部でも欠如がある場合、内容は無効となります。入会以外は<a href="" class="email-button">メールフォーム</a>までお願いします｡</p>
+			<p>※送信前に<a href="" class="policy-button">プライバシーポリシー</a>をご覧ください</p>
 			<div class="text">
 				<input name="entry.1387815750" placeholder="お名前（必須）" required="required" type="text"> <input name="entry.1736430845" placeholder="メールアドレス（必須）" required="required" type="email">
 			</div>
@@ -85,12 +86,13 @@
 		<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf0uTwFC5KZIs-hiQny20fiyAO4Ykr_i7y1hHfd1muvx8rjZQ/formResponse" id="email" name="email" onsubmit="OnSubmit();" target="hidden">
 			<h1>メールフォーム</h1>
 			<p>お問い合わせ内容をご入力ください｡</p>
+			<p>※送信前に<a href="" class="policy-button">プライバシーポリシー</a>をご覧ください</p>
 			<div class="text">
 				<input name="entry.399419356" placeholder="お名前（必須）" required="required" type="text"> <input name="entry.1144428312" placeholder="メールアドレス（必須）" required="required" type="email"><input name="entry.591748748" placeholder="題名（必須）" required="required" type="text"> 
 				<textarea name="entry.26045273" placeholder="メッセージ本文（必須）" required="required"></textarea>
 			</div>
 			<div class="button-div">
-				<button type="submit">送信</button>
+				<button class="button-a" type="submit">送信</button>
 			</div>
 		</form>
 		<div id="member">
