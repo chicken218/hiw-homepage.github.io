@@ -21,9 +21,6 @@ function OnLoad() {
 }
 
 $(function() {
-	$('a').click(function() {
-		return false;
-	});
 	$('.home-button').click(function() {
 		$('#form').show();
 		$('#terms').hide();
