@@ -15,6 +15,6 @@ function OnLoad() {
 
 $(function() {
     $('#home-link').click(function() {
-        location.replace("https://hiw-homepage.github.io/hiw-homepage.html");
+        location.replace("hiw-homepage.html");
     })
 })
