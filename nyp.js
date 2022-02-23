@@ -2,13 +2,13 @@ document.getElementById("body");
 document.getElementById("header");
 document.getElementById("main");
 document.getElementById("link");
-document.getElementById("svg71");
+document.getElementById("outputsvg");
 document.getElementById("linkDiv");
 
 function OnLoad() {
 	const linkHeight = link.offsetHeight;
-    svg71.setAttribute("height", linkHeight + "px");
-    svg71.setAttribute("width", linkHeight * 1.5 + "px");
+    outputsvg.setAttribute("height", linkHeight + "px");
+    outputsvg.setAttribute("width", linkHeight + "px");
     const headerHeight = header.offsetHeight + 64 + "px 0 64px";
 	main.style.margin = headerHeight;
 }
