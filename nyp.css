@@ -16,13 +16,13 @@
 	}
 }
 body {
-    margin: 0;
-    font-size: 32px;
+	margin: 0;
+	font-size: 32px;
 	font-family: 'Noto Sans SC', sans-serif;
 	user-select: none;
 }
 header {
-    display: inline-flex;
+	display: inline-flex;
 	width: 100%;
 	box-shadow: 0 0 4px rgba(0, 0, 0, .5);
 	position: fixed;
@@ -39,7 +39,7 @@ header div button {
 	text-decoration: none;
 	font-family: 'Noto Sans SC', sans-serif;
 	font-weight: 500;
-    font-size: 32px; 
+	font-size: 32px;
 	border: none;
 	text-shadow: 0 0 4px black;
 }
@@ -73,7 +73,7 @@ hr {
 svg:hover {
 	cursor: pointer;
 }
-.text >:first-letter {
+.text>:first-letter {
 	font-size: 2em;
 	line-height: 1em;
 }
