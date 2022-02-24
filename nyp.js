@@ -7,14 +7,13 @@ document.getElementById("linkDiv");
 
 function OnLoad() {
 	const linkHeight = link.offsetHeight;
-    outputsvg.setAttribute("height", linkHeight + "px");
-    outputsvg.setAttribute("width", linkHeight + "px");
-    const headerHeight = header.offsetHeight + 64 + "px 0 64px";
+	outputsvg.setAttribute("height", linkHeight + "px");
+	outputsvg.setAttribute("width", linkHeight + "px");
+	const headerHeight = header.offsetHeight + 64 + "px 0 64px";
 	main.style.margin = headerHeight;
 }
-
 $(function() {
-    $('#home-link').click(function() {
-        location.replace("hiw-homepage.html");
-    })
+	$('#home-link').click(function() {
+		location.replace("hiw-homepage.html");
+	})
 })
