@@ -28,7 +28,7 @@ header {
 	position: fixed;
 	z-index: 1;
 	width: 100%;
-	background: linear-gradient(to bottom, black 33%, white, 33%, white 66%, #9b1b1b 66%);
+	background: linear-gradient(to bottom, black 33%, white 33% 66%, #9b1b1b 66%);
 	top: 0;
 	left: 0;
 }
