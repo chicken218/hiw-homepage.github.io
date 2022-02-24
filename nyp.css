@@ -23,14 +23,14 @@ body {
 }
 header {
 	display: inline-flex;
-	width: 100%;
-	box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+	width: calc(100% - 32px);
+	box-shadow: 0 0 4px rgba(0, 0, 0, .5), 0 0 16px rgba(0, 0, 0, .5) inset;
 	position: fixed;
 	z-index: 1;
-	width: 100%;
 	background: linear-gradient(to bottom, black 33%, white 33% 66%, #9b1b1b 66%);
 	top: 0;
 	left: 0;
+	margin: 16px;
 }
 header div button {
 	padding: 16px 32px;
