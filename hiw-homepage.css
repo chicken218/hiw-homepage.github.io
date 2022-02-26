@@ -98,7 +98,7 @@ input, textarea {
 	-moz-appearance: none;
 	appearance: none;
 	border: none;
-	box-shadow: 0 0 4px inset;
+	box-shadow: 0 0 4px rgba(0, 0, 0, .5) inset;
 	border-radius: 4px;
 	width: 100%;
 	margin: 0 0 64px 0;
