@@ -54,23 +54,16 @@ $(function() {
 		$('#certification').hide();
 	});
 	$('.join-button').click(function() {
-		
-		var cookies = document.cookie;
-		var arrangement = cookies.split(";");
-
-		for(var cookie of arrangement){
-			var specify = cookie.split("=");
-			if( specify[0] == "joSu" && specify[1] == "true"){
-				window.alert("送信済みです。このフォームで複数の回答はできません。");
-			} else {
-				$('#form').hide();
-				$('#terms').hide();
-				$('#policy').hide();
-				$('#join').show();
-				$('#email').hide();
-				$('#list').hide();
-				$('#certification').hide();
-			}
+		if (document.cookie.split(';').some((item) => item.includes('JoinSubmit=True'))) {
+			$('#form').hide();
+			$('#terms').hide();
+			$('#policy').hide();
+			$('#join').show();
+			$('#email').hide();
+			$('#list').hide();
+			$('#certification').hide();
+		} else {
+			window.alert("送信済みです。このフォームで複数の回答はできません。");
 		}
 	});
 	$('.email-button').click(function() {
