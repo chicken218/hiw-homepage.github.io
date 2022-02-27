@@ -22,7 +22,7 @@ function OnLoad() {
 }
 
 function Create() {
-    document.cookie = "joSu=true";
+    document.cookie = "JoinSubmit=True";
 }
 
 $(function() {
@@ -54,7 +54,9 @@ $(function() {
 		$('#certification').hide();
 	});
 	$('.join-button').click(function() {
-		if (document.cookie.split(';').some((item) => item.includes('JoinSubmit=True'))) {
+		if (document.cookie.split(";").some((item) => item.includes("JoinSubmit=True"))) {
+			window.alert("送信済みです。このフォームで複数の回答はできません。");
+		} else {
 			$('#form').hide();
 			$('#terms').hide();
 			$('#policy').hide();
@@ -62,8 +64,6 @@ $(function() {
 			$('#email').hide();
 			$('#list').hide();
 			$('#certification').hide();
-		} else {
-			window.alert("送信済みです。このフォームで複数の回答はできません。");
 		}
 	});
 	$('.email-button').click(function() {
