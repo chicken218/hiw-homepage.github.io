@@ -4,6 +4,7 @@ document.getElementById("iframe");
 document.getElementById("list");
 document.getElementById("certification");
 document.getElementById("member");
+document.getElementById("outputsvg");
 
 function OnLoad() {
 	document.getElementById("useragent").value = navigator.userAgent;
@@ -18,6 +19,10 @@ function OnLoad() {
 	}, 300);
 	const headerHeight = header.offsetHeight + 64 + "px 128px auto 128px";
 	main.style.margin = headerHeight;
+}
+
+function Create() {
+    document.cookie = "joSu=true";
 }
 
 $(function() {
@@ -85,9 +90,6 @@ $(function() {
 		$('#email').hide();
 		$('#list').hide();
 		$('#certification').show();
-	})
-	$('.join-submit').click(function() {
-		document.cookie = "joSu=true";
 	})
 });
 
