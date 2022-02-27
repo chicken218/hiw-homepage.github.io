@@ -22,7 +22,7 @@ function OnLoad() {
 }
 
 function Create() {
-    document.cookie = "JoinSubmit=True";
+    document.cookie = "JoinSubmit=True"; "max-age=31536000";
 }
 
 $(function() {
