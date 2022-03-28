@@ -57,7 +57,21 @@
                 position: relative;
                     left: -48px;
             }
+            iframe {
+                display: none;
+            }
         </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+            $(document).on('click', 'button', function(){
+                if ($('input').prop('checked') == true) {
+                    $('iframe').show();
+                }
+            });
+            function IFrameHide() {
+                $('iframe').hide();
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -93,6 +107,7 @@
                     </section>
                 </div>
             </div>
+            <iframe id="iframe" style="height: 272px;" src="./form.html" frameborder="0"></iframe>
         </main>
     </body>
 </html>

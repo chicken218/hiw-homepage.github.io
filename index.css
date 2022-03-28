@@ -1,11 +1,17 @@
 @media screen and (min-device-width: 1024px) {
-    main .see-terms, main div {
+    main .see-terms, main div, iframe {
         margin: 0 256px;
+    }
+    iframe {
+        width: calc(100% - 512px);
     }
 }
 @media screen and (max-device-width: 1024px) {
-    main .see-terms, main div {
+    main .see-terms, main div, iframe {
         margin: 0 128px;
+    }
+    iframe {
+        width: calc(100% - 256px);
     }
 }
 body {
