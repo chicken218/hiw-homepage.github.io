@@ -32,13 +32,13 @@ header {
     width: calc(100% - 48px);
     background-color: white;
     padding: 24px;
-    height: 2rem;
+    height: 32px;
     box-shadow: rgba(0, 0, 0, .25) 0px 2px 4px 0px;
 }
 header a {
     text-decoration: none;
     user-select: none;
-    height: 1.15625em;
+    height: 18.5px;
 }
 header div {
     padding: 0 32px;
@@ -48,8 +48,8 @@ header div a {
     color: black;
     background-color: transparent;
     font-weight: bold;
-    font-size: 1em;
-    line-height: 1em;
+    font-size: 24px;
+    line-height: 16px;
     padding-right: 32px;
 }
 main {
@@ -62,7 +62,7 @@ main {
 .motto {
     margin: 0;
     color: white;
-    font-size: 3rem;
+    font-size: 48px;
     position: relative;
     top: 80px;
 }
