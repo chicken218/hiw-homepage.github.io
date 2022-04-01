@@ -94,26 +94,21 @@
                 const UA = window.navigator.userAgent.toLowerCase()
 
                 if (UA.indexOf("msie") != -1 || UA.indexOf("trident") != -1) {
-                    $('#browser').val('Internet Explorer');
-                    $('#bS').val('Internet Explorer');
+                    $('.browser').val('Internet Explorer');
                 } else if (UA.indexOf("edg") != -1 || UA.indexOf("edge") != -1) {
-                    $('#browser').val('Edge');
-                    $('#bS').val('Edge');
+                    $('.browser').val('Edge');
                 } else if (UA.indexOf("opr") != -1 || UA.indexOf("opera") != -1) {
-                    $('#browser').val('Opera');
-                    $('#bS').val('Opera');
+                    $('.browser').val('Opera');
                 } else if (UA.indexOf("chrome") != -1) {
-                    $('#browser').val('Chrome');
-                    $('#bS').val('Chrome');
+                    $('.browser').val('Chrome');
                 } else if (UA.indexOf("safari") != -1) {
-                    $('#browser').val('Safari');
-                    $('#bS').val('Safari');
+                    $('.browser').val('Safari');
                 } else if (UA.indexOf("firefox") != -1) {
-                    $('#browser').val('Firefox');
-                    $('#bS').val('Firefox');
+                    $('.browser').val('Firefox');
                 } else if (UA.indexOf("opr") != -1 || UA.indexOf("opera") != -1) {
-                    $('#browser').val('Opera');
-                    $('#bS').val('Opera');
+                    $('.browser').val('Opera');
+                } else if (UA.indexOf("SamsungBrowser" != -1)) {
+                    $('.browser').val('Samsung Internet');
                 }
             });
         </script>
@@ -124,9 +119,9 @@
             <h1>Enrollment form</h1>
             <p>全ての項目が必須です。一部でも欠如がある場合、内容は無効となります。入会以外は<a href="">メールフォーム</a>まで。</p>
             <div>
-                <input name="entry.1387815750" placeholder="お名前（必須）" required="required" type="text"><input name="entry.1736430845" placeholder="メールアドレス（必須）" required="required" type="email"><input id="browser" name="entry.1967375759" type="text">
+                <input name="entry.1387815750" placeholder="お名前（必須）" required="required" type="text"><input name="entry.1736430845" placeholder="メールアドレス（必須）" required="required" type="email"><input class="browser" name="entry.1967375759" type="text">
                 <label for="entry.1638592019"><img src="./image/browser.svg" style="filter: invert(); height: 12px; margin-right: 4px;">Browser</label>
-                <select name="entry.1638592019" id="bS">
+                <select name="entry.1638592019" class="browser">
                     <option value="Edge">Edge</option>
                     <option value="Chrome">Chrome</option>
                     <option value="Firefox">Firefox</option>
