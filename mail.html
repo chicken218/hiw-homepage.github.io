@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>非リア、陰キャ、ヲタクの集い</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="index.css">
+        <style>
+            body {
+                background-color: whitesmoke;
+            }
+            main div {
+                z-index: 2;
+                position: relative;
+                background-color: white;
+                padding: 24px 24px;
+                font-family: 'Zilla Slab', serif;
+                color: black;
+            }
+            main div h1 {
+                font-weight: 300;
+                margin: 0;
+            }
+            main div ol li {
+                margin-bottom: 32px;
+            }
+            label {
+                font-family: Nunito Sans, Helvetica, Arial, sans-serif;
+                font-weight: 100;
+                font-size: 16px;
+            }
+            hr {
+                border-color: lightgray;
+            }
+            button {
+                background-color: #6149f9;
+                color: white;
+                border: none;
+                border-radius: 0;
+                font-weight: bold;
+                font-size: 24px;
+                padding: 12px 48px;
+                cursor: pointer;
+                position: relative;
+                left: calc(50% - 48px);
+            }
+            label {
+                font-weight: 100;
+                font-size: 24px;
+                display: inline-block !important;
+                background-color: #0088bf;
+                color: white;
+                width: 168px;
+                height: 64px;
+                line-height: 64px;
+                padding: 0 16px;
+                text-align: center;
+            }
+            label:last-of-type {
+                height: 256px;
+                line-height: 256px;
+            }
+            main div div {
+                text-align: center;
+            }
+            section {
+                position: relative;
+                    left: -48px;
+            }
+            iframe {
+                display: none;
+            }
+            form * {
+                display: block;
+            }
+            form div {
+                text-align: center;
+            }
+            input, textarea {
+                border: 1px solid #d3d3d3;
+                border-radius: 0;
+                padding: 16px 12px;
+                margin-bottom: 48px;
+                width: calc(100% - 272px);
+                height: 64px;
+                box-sizing: border-box;
+                display: inline;
+                font-size: 24px;
+                box-sizing: border-box;
+                font-family: 'Zilla Slab', serif;
+                font-weight: 100;
+            }
+            textarea {
+                vertical-align: top;
+                margin-bottom: 16px;
+                height: 256px;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+            $(document).on('click', 'button', function(){
+                if ($('input').prop('checked') == true) {
+                    $('iframe').show();
+                }
+            });
+            function IFrameHide() {
+                $('iframe').hide();
+            }
+
+            function OnSubmit() {
+                var submitted = false;
+                $('#submit').html('<button type="submit" disabled>送信済み</button>')
+                location.href= "../"
+            }
+        </script>
+    </head>
+    <body>
+        <iframe id="hidden" name="hidden"></iframe>
+        <header>
+            <a href="../"><img src="./image/logo.svg" width="63.49606299212598425196850393701" height="32" alt=""></a>
+            <div>
+                <a href="">理念</a>
+                <a href="">ご案内</a>
+                <a href="">メールフォーム</a>
+            </div>
+        </header>
+        <img style="position: relative; top: 80px; width: 100%; height: 144px; object-fit: cover; z-index: 1; pointer-events: none;" src="./image/mail.jpg" alt="">
+        <main>
+            <div>
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf0uTwFC5KZIs-hiQny20fiyAO4Ykr_i7y1hHfd1muvx8rjZQ/formResponse" onsubmit="OnSubmit();" target="hidden">
+                    <h1>Membership agreement</h1>
+                    <p>お問い合わせ内容をご入力ください。</p>
+                    <div>
+                        <label for="entry.399419356">お名前</label><input name="entry.399419356" required placeholder="これらは必須です" type="text"><br>
+                        <label for="entry.1144428312">メールアドレス</label><input name="entry.1144428312" placeholder="これは任意です" type="text"><br>
+                        <label for="entry.591748748">題名</label><input name="entry.591748748" required placeholder="これらは必須です" type="text"><br>
+                        <label for="entry.26045273">メッセージ本文</label><textarea name="entry.26045273" required placeholder="これらは必須です"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">送信</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
