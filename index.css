@@ -1,4 +1,4 @@
-@media screen and (min-device-width: 1024px) {
+@media screen and (min-device-width: 768px) {
     main .see-terms, main div:not(form div), iframe {
         margin: 0 256px;
     }
@@ -6,7 +6,7 @@
         width: calc(100% - 512px);
     }
 }
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-device-width: 768px) {
     main .see-terms, main div:not(form div), iframe {
         margin: 0 128px;
     }
