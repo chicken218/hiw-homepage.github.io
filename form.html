@@ -91,7 +91,7 @@
             }
 
             $('#ua').ready(function() {
-                const UA = window.navigator.userAgent.toLowerCase()
+                const UA = window.navigator.userAgent.toLowerCase();
 
                 if (UA.indexOf("msie") != -1 || UA.indexOf("trident") != -1) {
                     $('.browser').val('Internet Explorer');
@@ -99,6 +99,8 @@
                     $('.browser').val('Edge');
                 } else if (UA.indexOf("opr") != -1 || UA.indexOf("opera") != -1) {
                     $('.browser').val('Opera');
+                } else if (UA.indexOf("samsungbrowser") != -1) {
+                    $('.browser').val('Samsung Internet');
                 } else if (UA.indexOf("chrome") != -1) {
                     $('.browser').val('Chrome');
                 } else if (UA.indexOf("safari") != -1) {
@@ -107,8 +109,6 @@
                     $('.browser').val('Firefox');
                 } else if (UA.indexOf("opr") != -1 || UA.indexOf("opera") != -1) {
                     $('.browser').val('Opera');
-                } else if (UA.indexOf("SamsungBrowser" != -1)) {
-                    $('.browser').val('Samsung Internet');
                 }
             });
         </script>
@@ -129,7 +129,7 @@
                     <option value="Safari">Safari</option>
                     <option value="Internet Explorer">Internet Explorer</option>
                     <option value="Brave">Brave</option>
-                    <option value="Samusung Internet">Samsung Internet</option>
+                    <option value="Samsung Internet">Samsung Internet</option>
                 </select>
             </div>
             <div id="submit">
