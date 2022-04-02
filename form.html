@@ -99,10 +99,12 @@
                     $('.browser').val('Edge');
                 } else if (UA.indexOf("opr") != -1 || UA.indexOf("opera") != -1) {
                     $('.browser').val('Opera');
-                } else if (UA.indexOf("samsungbrowser") != -1) {
-                    $('.browser').val('Samsung Internet');
-                } else if (UA.indexOf("chrome") != -1) {
-                    $('.browser').val('Chrome');
+                } if (UA.indexOf("chrome") != -1) {
+                    if (UA.indexOf("samsungbrowser") != -1) {
+                        $('.browser').val('Samsung Internet');
+                    } else {
+                        $('.browser').val('Chrome');
+                    }
                 } else if (UA.indexOf("safari") != -1) {
                     $('.browser').val('Safari');
                 } else if (UA.indexOf("firefox") != -1) {
