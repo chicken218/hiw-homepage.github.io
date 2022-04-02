@@ -111,6 +111,7 @@
 
             function OnSubmit() {
                 var submitted = false;
+                $('#submit').html('<button type="submit" disabled>送信済み</button>')
             }
         </script>
     </head>
@@ -137,7 +138,7 @@
                         <label for="entry.26045273">メッセージ本文</label><textarea name="entry.26045273" required placeholder="これらは必須です"></textarea>
                     </div>
                     <div>
-                        <button type="submit">送信</button>
+                        <button id="submit" type="submit">送信</button>
                     </div>
                 </form>
             </div>
