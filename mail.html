@@ -58,7 +58,7 @@
                 padding: 0 16px;
                 text-align: center;
             }
-            label:last-of-type {
+            label:nth-of-type(4) {
                 height: 256px;
                 line-height: 256px;
             }
@@ -98,6 +98,34 @@
                 height: 256px;
                 resize: none;
             }
+            label:last-of-type {
+                vertical-align: bottom;
+            }
+            label:last-of-type, select {
+                display: inline-block;
+            }
+            label img {
+                display: inline-block;
+            }
+            select {
+                border: 1px solid #d3d3d3;
+                background-color: transparent;
+                border-radius: 0;
+                padding: 16px 12px;
+                width: calc(100% - 272px);
+                height: 64px;
+                box-sizing: border-box;
+                font-weight: 100;
+                font-size: 24px;
+                font-family: 'Zilla Slab', serif;
+                appearance: none;
+                background-image: url('./image/down.svg');
+                background-repeat: no-repeat;
+                background-position: calc(100% - 16px) 50%;
+            }
+            select option {
+                font-family: Nunito Sans, Helvetica, Arial, sans-serif;
+            }
         </style>
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script>
@@ -114,6 +142,30 @@
                 var submitted = false;
                 $('#submit').html('<button type="submit" disabled>送信済み</button>')
             }
+
+            $('#ua').ready(function() {
+                const UA = window.navigator.userAgent.toLowerCase();
+
+                if (UA.indexOf("msie") != -1 || UA.indexOf("trident") != -1) {
+                    $('.browser').val('Internet Explorer');
+                } else if (UA.indexOf("edg") != -1 || UA.indexOf("edge") != -1) {
+                    $('.browser').val('Edge');
+                } else if (UA.indexOf("opr") != -1 || UA.indexOf("opera") != -1) {
+                    $('.browser').val('Opera');
+                } else if (UA.indexOf("chrome") != -1) {
+                    if (UA.indexOf("samsungbrowser") != -1) {
+                        $('.browser').val('Samsung Internet');
+                    } else {
+                        $('.browser').val('Chrome');
+                    }
+                } else if (UA.indexOf("safari") != -1) {
+                    $('.browser').val('Safari');
+                } else if (UA.indexOf("firefox") != -1) {
+                    $('.browser').val('Firefox');
+                } else if (UA.indexOf("opr") != -1 || UA.indexOf("opera") != -1) {
+                    $('.browser').val('Opera');
+                }
+            });
         </script>
     </head>
     <body>
@@ -137,9 +189,11 @@
                         <label for="entry.1144428312">メールアドレス</label><input name="entry.1144428312" placeholder="これは任意です" type="text"><br>
                         <label for="entry.591748748">題名</label><input name="entry.591748748" required placeholder="これらは必須です" type="text"><br>
                         <label for="entry.26045273">メッセージ本文</label><textarea name="entry.26045273" required placeholder="これらは必須です"></textarea>
+                        <input class="browser" style="display: none;" name="entry.978477266" type="text">
+                        <label for="entry.26045273"><img src="./image/browser.svg" style="filter: invert(); height: 24px; margin-right: 4px; vertical-align: -6.125%;">Browser</label><select name="entry.26045273" class="browser"><option value="Edge">Edge</option><option value="Chrome">Chrome</option><option value="Firefox">Firefox</option><option value="Opera">Opera</option><option value="Safari">Safari</option><option value="Internet Explorer">Internet Explorer</option><option value="Brave">Brave</option><option value="Samsung Internet">Samsung Internet</option></select>
                     </div>
-                    <div>
-                        <button id="submit" type="submit">送信</button>
+                    <div id="submit">
+                        <button type="submit">送信</button>
                     </div>
                 </form>
             </div>
