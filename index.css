@@ -76,6 +76,7 @@ main {
     width: 50%;
 }
 span {
+    white-space: nowrap;
     display: inline-block;
 }
 body .motto a {
@@ -149,4 +150,7 @@ td.gsc-input {
     border-radius: 0 !important;
     background-color: #0088bf !important;
     cursor: pointer;
+}
+.gcsc-find-more-on-google-query {
+    line-height: 1.2em !important;
 }
