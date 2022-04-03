@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hiw-homepage.github.io/</loc>
+    <loc>https://hiw-homepage.github.io/;index.html</loc>
     <lastmod>2022-04-03</lastmod>
   </url>
     <url>
-    <loc>https://hiw-homepage.github.io/join</loc>
+    <loc>https://hiw-homepage.github.io/join;.html</loc>
     <lastmod>2022-04-03</lastmod>
   </url>
     <url>
-    <loc>https://hiw-homepage.github.io/mail</loc>
+    <loc>https://hiw-homepage.github.io/mail;.html</loc>
     <lastmod>2022-04-03</lastmod>
   </url>
 </urlset>
