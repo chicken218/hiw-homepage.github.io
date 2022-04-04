@@ -144,6 +144,7 @@ td.gsc-input {
 .gsc-input-box {
     border: 1px solid #d3d3d3;
     border-radius: none;
+    appearance: none;
 }
 .gsc-search-button-v2 {
     border: none !important;
