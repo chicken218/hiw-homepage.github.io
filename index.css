@@ -3,7 +3,7 @@
         margin: 0 256px;
     }
     iframe {
-        width: calc(200% - 512px);
+        width: calc(100% - 512px);
     }
 }
 @media screen and (max-device-width: 1024px) {
@@ -11,7 +11,7 @@
         margin: 0 128px;
     }
     iframe {
-        width: calc(200% - 256px);
+        width: calc(100% - 256px);
     }
 }
 body {
