@@ -3,7 +3,7 @@
         margin: 0 256px;
     }
     iframe {
-        width: calc(100% - 512px);
+        width: calc(200% - 512px);
     }
 }
 @media screen and (max-device-width: 1024px) {
@@ -11,13 +11,13 @@
         margin: 0 128px;
     }
     iframe {
-        width: calc(100% - 256px);
+        width: calc(200% - 256px);
     }
 }
 body {
     font-family: Nunito Sans, Helvetica, Arial, sans-serif;
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -55,7 +55,7 @@ header div a {
 main {
     padding-top: 64px;
     margin: 0;
-    font-weight: 300;
+    font-weight: 400;
     position: relative;
     top: -88px;
 }
@@ -137,6 +137,7 @@ main .see-terms a:hover {
 }
 td.gsc-search-button {
     padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 td.gsc-input {
     padding-right: 0 !important;
