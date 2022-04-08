@@ -8,6 +8,35 @@
         <link loading="lazy" rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link loading="lazy" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;700&family=Zilla+Slab:wght@300;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
+        <style>
+            @media screen and (min-device-width: 1024px) {
+                iframe {
+                    left: -256px;
+                }
+            }
+            @media screen and (max-device-width: 1024px) {
+                iframe {
+                    left: 0;
+                }
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script>
+            $(document).on('click', '#search', function(){
+                $('iframe').css({
+                    'display': 'flex',
+                });
+                $('#search').attr('id', 'close');
+                $('#img').attr('src', './image/close.svg');
+            });
+            $(document).on('click', '#close', function(){
+                $('iframe').css({
+                    'display': 'none',
+                });
+                $('#close').attr('id', 'search');
+                $('#img').attr('src', './image/search.svg');
+            });
+        </script>
     </head>
     <body>
         <header>
@@ -17,6 +46,7 @@
                 <a href="">ご案内</a>
                 <a href="./mail">メールフォーム</a>
             </div>
+            <button id="search" style="display: flex; position: fixed; top: 32px; right: 32px; z-index: 3; border: none; background-color: transparent; cursor: pointer;"><img id="img" src="./image/search.svg" style="vertical-align: -6.125%;" alt=""></button>
         </header>
         <h1 class="motto"><div><span>非リア、</span><span>陰キャ、</span><span>ヲタクの集い</span></div><a href="join">入会を検討する<img style="margin-left: 8px; vertical-align: -12.5%; filter: invert();" src="./image/open.svg" alt=""></a></h1>
         <main>
@@ -25,5 +55,6 @@
                 <a href="join">入会規約を見る</a>
             </div>
         </main>
+        <iframe style="display: none; position: fixed; top: 80px; z-index: 2; width: 100%; height: calc(100vh - 80px);" src="" frameborder="0"></iframe>
     </body>
 </html>
