@@ -8,18 +8,6 @@
         <link loading="lazy" rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link loading="lazy" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;700&family=Zilla+Slab:wght@300;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
-        <style>
-            @media screen and (min-device-width: 1024px) {
-                iframe {
-                    left: -256px;
-                }
-            }
-            @media screen and (max-device-width: 1024px) {
-                iframe {
-                    left: 0;
-                }
-            }
-        </style>
         <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
         <script>
             $(document).on('click', '#search', function(){
@@ -55,6 +43,6 @@
                 <a href="join">入会規約を見る</a>
             </div>
         </main>
-        <iframe style="display: none; position: fixed; top: 80px; z-index: 2; width: 100%; height: calc(100vh - 80px);" src="./search" frameborder="0"></iframe>
+        <iframe style="display: none; position: fixed; top: 80px; left: -256px; z-index: 2; width: 100%; height: calc(100vh - 80px);" src="./search" frameborder="0"></iframe>
     </body>
 </html>
