@@ -105,7 +105,7 @@
                 (async () => {
                     let hashPassword = await sha256(varPass);
                     if (varId == "member" && hashPassword == "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855") {
-                    sha256(password).then(hash => location.replace = "https://hiw-homepage.github.io/" + hash);
+                    sha256(password).then(hash => location.replace("https://hiw-homepage.github.io/" + hash));
                 }
                 })();
             });
